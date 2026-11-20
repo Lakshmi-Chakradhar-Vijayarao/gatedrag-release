@@ -203,3 +203,33 @@ The person judged **32 correct and 16 wrong**.
 **A golden-set defect the grader found:**
 - **The item:** `g2-036` (test split) has the reference "WorkingQueue", copied verbatim from one NATS docs page, while the policy is named `WorkQueuePolicy` elsewhere in the same docs. The token scorer therefore marks a correct `WorkQueuePolicy` answer wrong.
 - **What was done:** the frozen split is not edited, so this run's numbers stay reproducible. The item is listed as a known defect, and its effect is at most 1 item in 247 per run.
+
+## 9. Two runs per release: the clustered test exercised (exploratory)
+
+**Why this section exists.** The simulations in §1–§5 draw one run per release, so the gate always uses exact McNemar, and its document-clustered permutation test is never exercised. The baseline has 6 runs, which splits into three disjoint releases of 2 runs each (previous, anchor and a no-change candidate). That is the largest design that needs no overlap.
+
+**Design** (`scripts/analysis/runs_per_release.py`, `clustering_cost.py`; evidence in `docs/evidence/runs_per_release/`):
+- 2,000 simulated releases × 3 seeds, at 1 and at 2 runs per release, on the same releases;
+- at 2 runs per release, the gate averages each item over its runs and flips signs per source document (156 documents, 247 items);
+- the mean-drop rule gets the same checks and is set to the same false-block rate.
+
+| | 1 run per release | 2 runs per release |
+|---|---|---|
+| Gate false blocks on unchanged releases | 0.011 (0.009–0.014) | 0.014 (0.011–0.017) |
+| Matched mean-drop threshold | 3.6 points | 2.6 points |
+| `max_tokens_32` (−4.2 points): gate / rule | 0.351 / 0.616 | **0.649** / 0.965 |
+| `top_k_2` (−3.9 points): gate / rule | 0.141 / 0.546 | **0.096** / 0.947 |
+| `no_regenerate` (−6.1 points): gate / rule | 0.873 / 0.917 | 1.000 / 1.000 |
+| `verifier_always_accept`: gate / rule | 1.000 / 0.000 | 1.000 / 0.000 |
+
+**What changes with more runs:**
+- **A second run helps both gates.** Averaging two runs per item reduces noise. The gate's catch rate on `max_tokens_32` nearly doubles, and `no_regenerate` is always caught.
+- **The simple rule gains more.** Its calibrated threshold drops from 3.6 to 2.6 points.
+
+**`top_k_2` gets *harder* for the gate, and clustering is not the reason:**
+- With signs flipped per item instead of per document, the gate catches `top_k_2` 0.110 of the time, against 0.085 clustered, at a similar false-block rate (0.017 vs 0.016; 1,000 releases × 3 seeds).
+- **The cause is the mechanism from §4.** At 2 runs per release, `top_k_2` raises the per-item variance of the difference from 0.034 to 0.120, about 3.5 times. Its 3.9-point drop is then only 1.77 standard errors from zero, below what the gate needs at its split α. `max_tokens_32` raises it to 0.087, a 2.23-standard-error drop, and is caught more often.
+
+**Conclusion:**
+- **Document clustering costs this gate little power here.** Flipping signs per document instead of per item changes the catch rate by about 0.025 and leaves the false-block rate the same.
+- **What decides the outcome is noise normalisation.** A release that makes answers noisier hides its own drop from any variance-normalised test. A fixed threshold catches it, at the price of false-blocking noisy harmless releases (§5).

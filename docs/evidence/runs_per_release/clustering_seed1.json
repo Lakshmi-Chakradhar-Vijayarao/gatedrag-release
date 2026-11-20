@@ -1,0 +1,22 @@
+{
+ "n_sim": 1000,
+ "seed": 1,
+ "clustered": {
+  "false_block": 0.01,
+  "catch": {
+   "max_tokens_32": 0.676,
+   "top_k_2": 0.097,
+   "no_regenerate": 1.0
+  }
+ },
+ "item_level": {
+  "false_block": 0.01,
+  "catch": {
+   "max_tokens_32": 0.646,
+   "top_k_2": 0.109,
+   "no_regenerate": 1.0
+  }
+ },
+ "n_items": 247,
+ "n_clusters": 156
+}
