@@ -12,7 +12,7 @@
 **At runtime:**
 
 ```
-question → hybrid retrieval (access control applied BEFORE ranking)
+question → BM25 retrieval (dense/hybrid available as a release option; access control applied BEFORE ranking)
          → LLM answer with citations (any OpenAI-compatible server; vLLM in deployment)
          → claim-level verification against the retrieved passages
          → ACCEPT / REGENERATE once / ABSTAIN by expected cost, with p = P(correct) calibrated on the dev split:
