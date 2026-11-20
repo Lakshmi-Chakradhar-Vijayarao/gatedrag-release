@@ -95,11 +95,20 @@ def compare() -> int:
             exact = (r["test"].get(key) or "").startswith(("exact", "McNemar")) or r["k"] == 1
             if not _close(pv, n["p"].get(key), 1e-9 if exact else P_TOL):
                 problems.append(f"{where}: p[{key}] {pv} -> {n['p'].get(key)}")
+    def same(x, y) -> bool:   # numbers within 1e-9, recursively; everything else exactly
+        if isinstance(x, dict) and isinstance(y, dict):
+            return x.keys() == y.keys() and all(same(x[k], y[k]) for k in x)
+        if isinstance(x, list) and isinstance(y, list):
+            return len(x) == len(y) and all(same(a, b) for a, b in zip(x, y, strict=True))
+        if isinstance(x, bool) or isinstance(y, bool):
+            return x == y
+        if isinstance(x, (int, float)) and isinstance(y, (int, float)):
+            return _close(x, y, 1e-9)
+        return x == y
     for name, val in ref["fixed"].items():
-        if json.dumps(val, sort_keys=True, default=str) != json.dumps(now["fixed"][name], sort_keys=True, default=str):
-            v1, v2 = val, now["fixed"][name]
-            if not (isinstance(v1, float) and _close(v1, v2, 1e-9)):
-                problems.append(f"fixed input {name}: {v1} -> {v2}")
+        now_val = json.loads(json.dumps(now["fixed"][name], default=str))
+        if not same(val, now_val):
+            problems.append(f"fixed input {name}: {val} -> {now_val}")
     n_dec = len(ref["rows"])
     print(f"{n_dec} decisions compared ({sum(r['k'] == 3 for r in ref['rows'])} on the clustered path); "
           f"{len(problems)} differences")
