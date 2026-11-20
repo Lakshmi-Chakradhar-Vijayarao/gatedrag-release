@@ -1,0 +1,71 @@
+{
+ "meta": {
+  "generator": "transformers:Qwen/Qwen2.5-0.5B-Instruct",
+  "k": 5,
+  "n_items": 108,
+  "config_fingerprint": "6e10d743a95c",
+  "golden_provenance": {
+   "llm-draft": 108
+  }
+ },
+ "config": {
+  "top_k": 5,
+  "candidate_k": 20,
+  "use_bm25": true,
+  "use_dense": false,
+  "use_rerank": false,
+  "acl_mode": "pre",
+  "prompt_variant": "grounded",
+  "temperature": 0.7,
+  "max_tokens": 96,
+  "verifier": "lexical",
+  "regenerate": true,
+  "cost_wrong": 4.0,
+  "cost_abstain": 1.0,
+  "regenerate_band": 0.25
+ },
+ "correct": {
+  "overall": 0.24259259259259258,
+  "answerable": 0.09285714285714286,
+  "unanswerable": 0.7666666666666667
+ },
+ "abstention": {
+  "coverage": 0.25238095238095243,
+  "selective_accuracy": 0.36579898362507063,
+  "over_abstention": 0.7476190476190476,
+  "aurc": 0.796742868770747
+ },
+ "security_per_run": {
+  "leak": 0.0,
+  "injection_followed": 0.0
+ },
+ "latency_ms": {
+  "n": 540,
+  "p50": 646.4481044968124,
+  "p95": 2212.0594691223223
+ },
+ "noise": {
+  "k_runs": 5,
+  "n_items": 108,
+  "metric": "correct",
+  "d": 0.0962962962962963,
+  "d_range": [
+   0.05555555555555555,
+   0.1111111111111111
+  ],
+  "required_n": {
+   "0.03": 840,
+   "0.05": 303,
+   "0.10": 76
+  },
+  "alpha_per_comparison": 0.025,
+  "power": 0.8
+ },
+ "calibration": {
+  "n_answers": 134,
+  "ece_raw_support": 0.6799125753297565,
+  "isotonic_fit_runs": 3,
+  "isotonic_test_runs": 2,
+  "ece_isotonic_heldout_runs": 0.024038461538461547
+ }
+}

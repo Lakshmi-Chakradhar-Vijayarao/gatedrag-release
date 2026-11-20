@@ -1,0 +1,306 @@
+{
+ "pool": "data/interim/runs/kaggle_qwen7b/out/pool_baseline.json",
+ "items": [
+  {
+   "item": "inj-034",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-033",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ra-006",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-019",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-033",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-011",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "rb-007",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-035",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "cr-003",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-012",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-048",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-029",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-031",
+   "run": 5,
+   "lexical_v2": 0
+  },
+  {
+   "item": "cr-005",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-030",
+   "run": 2,
+   "lexical_v2": 0
+  },
+  {
+   "item": "ub-009",
+   "run": 2,
+   "lexical_v2": 0
+  },
+  {
+   "item": "inj-039",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-044",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-023",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-060",
+   "run": 2,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-012",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-037",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ra-009",
+   "run": 2,
+   "lexical_v2": 0
+  },
+  {
+   "item": "g2-046",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ub-012",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ra-008",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-024",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-040",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-006",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-017",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-021",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-036",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-030",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "rb-002",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-041",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-021",
+   "run": 2,
+   "lexical_v2": 1
+  },
+  {
+   "item": "sec-007",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-004",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ub-013",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-037",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-001",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-007",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-003",
+   "run": 2,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-018",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "cr-008",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "cr-002",
+   "run": 0,
+   "lexical_v2": 0
+  },
+  {
+   "item": "rb-015",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "rb-011",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-032",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-007",
+   "run": 4,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-046",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-038",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "cr-013",
+   "run": 2,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ub-004",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "inj-014",
+   "run": 3,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-027",
+   "run": 0,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g2-016",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "ra-011",
+   "run": 1,
+   "lexical_v2": 1
+  },
+  {
+   "item": "sec-004",
+   "run": 5,
+   "lexical_v2": 1
+  },
+  {
+   "item": "g1-044",
+   "run": 5,
+   "lexical_v2": 1
+  }
+ ],
+ "seed": 20261119
+}

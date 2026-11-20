@@ -1,0 +1,273 @@
+{
+ "judge": "mistralai/Mistral-7B-Instruct-v0.3",
+ "vllm": [
+  "vllm==0.6.6.post1",
+  "transformers==4.47.1"
+ ],
+ "pools": {
+  "p2_test_base_gate_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 125,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_gate_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 125,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_gate_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 125,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_prompt_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 276,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_prompt_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 276,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_prompt_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 276,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 291,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 291,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 291,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_base_selfconsistency.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 725,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_gate_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 55,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_gate_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 62,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_gate_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 84,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 302,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 321,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_dpo_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 315,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_seed0.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 290,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_seed1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 314,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "p2_test_sft_seed2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 308,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_acl_off.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 289,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_acl_post_filter.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 289,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_baseline.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 578,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_blind_release_1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 292,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_blind_release_2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 183,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_blind_release_3.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 280,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_blind_release_4.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 494,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_blind_release_5.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 313,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_max_tokens_32.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 298,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_no_regenerate.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 237,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_open_loop.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 331,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_open_loop_dev.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 108,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_prompt_plain.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 319,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_real_awq.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 290,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_real_hybrid.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 292,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_real_model_swap.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 336,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_real_prompt_edit.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 290,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_top_k_1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 226,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_top_k_2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 268,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_tp_release_1.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 293,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_tp_release_2.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 223,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_tp_release_3.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 280,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_tp_release_4.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 494,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_tp_release_5.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 296,
+   "unparsed": 0,
+   "prompt_version": 1
+  },
+  "pool_verifier_always_accept.json": {
+   "model": "openai-compatible:mistralai/Mistral-7B-Instruct-v0.3",
+   "judged": 497,
+   "unparsed": 0,
+   "prompt_version": 1
+  }
+ }
+}

@@ -1,0 +1,16 @@
+# numtrace (github.com/<you>/numtrace): every number in these documents must trace to a committed log.
+[reports]
+files = ["docs/PILOT.md"]
+
+[sources]
+pilot = "docs/evidence/pilot_qwen05_summary.json"
+q7 = "docs/evidence/kaggle_qwen7b_summary.json"
+q7noise = "docs/evidence/kaggle_qwen7b_noise.json"
+q7gate = "docs/evidence/kaggle_qwen7b_gate_experiment.json"
+q7gate_asrun = "docs/evidence/kaggle_qwen7b_gate_experiment_as_run.json"
+q7ops = "docs/evidence/kaggle_qwen7b_operating_points.json"
+q7gate2 = "docs/evidence/kaggle_qwen7b_gate_experiment_v2.json"     # fair comparison (matched false-block rate)
+q7shift = "docs/evidence/kaggle_qwen7b_noise_shift.json"            # noise-shift check, 5 seeds
+
+[map]
+path = "docs/evidence/numtrace.map.json"

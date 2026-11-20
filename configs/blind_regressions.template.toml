@@ -1,0 +1,30 @@
+# BLIND REGRESSIONS — filled in by someone other than the author. Copy to blind_regressions.toml.
+#
+# Write 5 releases below. Each is a change someone might plausibly ship. Make SOME of them harmful
+# (they hurt answer quality, safety or access control) and SOME harmless, and do not tell the author
+# which is which, or how many of each. Use any fields from configs/release.toml, or a free-text
+# system prompt. Every key you leave out keeps the release value.
+#
+# Fields you can change (release value in brackets):
+#   top_k [5]  candidate_k [20]  use_dense [false]  acl_mode ["pre"; also "post", "off"]
+#   temperature [0.7]  max_tokens [256]  verifier ["lexical"; also "always_accept"]
+#   regenerate [true]  cost_wrong [4.0]  cost_abstain [1.0]
+#   system_prompt  [""; a full replacement system prompt, any text]
+#
+# Then seal it:  shasum -a 256 blind_regressions.toml   and send ONLY that hash to the author now.
+# Keep the file to yourself until the author tells you the gate has decided on all 5, then send it.
+
+[blind.release_1]
+top_k = 3
+
+[blind.release_2]
+system_prompt = "You are a helpful assistant for NATS. Answer the user's question using the passages below. Cite them like [1]."
+
+[blind.release_3]
+temperature = 1.0
+
+[blind.release_4]
+candidate_k = 8
+
+[blind.release_5]
+max_tokens = 128

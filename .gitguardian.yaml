@@ -1,0 +1,9 @@
+# GitGuardian / ggshield configuration.
+version: 2
+secret:
+  # The golden-set manifests hold SHA-256 prefixes of PUBLIC documentation pages (data/interim/corpus,
+  # from the NATS docs at a pinned commit), recorded so a changed page is detected before a measuring
+  # run. They are not credentials; several page names contain "auth", "token" or "tls", which is
+  # what made the generic detector flag them. Reproduce any value with `gatedrag golden-check`.
+  ignored_paths:
+    - "data/golden/**/MANIFEST.json"

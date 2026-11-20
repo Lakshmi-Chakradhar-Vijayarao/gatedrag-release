@@ -1,0 +1,341 @@
+{
+ "design": "enriched with wrong answers: 15 flagged by either scorer + 20 flagged by neither (baseline pool), + 25 flagged wrong by the token scorer from the top_k_1 / max_tokens_32 pools; one answer per item",
+ "items": [
+  {
+   "pool": "baseline",
+   "item": "ra-001",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-030",
+   "run": 4,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-059",
+   "run": 1,
+   "v2": 1,
+   "judge": 0
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "g2-052",
+   "run": 2,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-036",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-047",
+   "run": 0,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "top_k_1",
+   "item": "inj-024",
+   "run": 0,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-038",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "cr-002",
+   "run": 3,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "rb-004",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-031",
+   "run": 0,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-016",
+   "run": 4,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-011",
+   "run": 0,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-021",
+   "run": 4,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "top_k_1",
+   "item": "g2-036",
+   "run": 1,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-003",
+   "run": 2,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "top_k_1",
+   "item": "cr-016",
+   "run": 1,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-006",
+   "run": 5,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "ua-009",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "top_k_1",
+   "item": "ua-018",
+   "run": 1,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-047",
+   "run": 1,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "ua-004",
+   "run": 0,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "rb-015",
+   "run": 1,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "ra-009",
+   "run": 5,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-053",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-043",
+   "run": 1,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-009",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-027",
+   "run": 1,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "ra-006",
+   "run": 1,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-010",
+   "run": 1,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-044",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "g2-024",
+   "run": 2,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "cr-001",
+   "run": 0,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-060",
+   "run": 5,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "cr-003",
+   "run": 5,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "ra-013",
+   "run": 5,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "cr-008",
+   "run": 4,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g1-030",
+   "run": 4,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-007",
+   "run": 1,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "cr-017",
+   "run": 3,
+   "v2": 1,
+   "judge": 1
+  },
+  {
+   "pool": "baseline",
+   "item": "g2-055",
+   "run": 4,
+   "v2": 1,
+   "judge": 0
+  },
+  {
+   "pool": "top_k_1",
+   "item": "ub-003",
+   "run": 1,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-048",
+   "run": 5,
+   "v2": 0,
+   "judge": 1
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "rb-010",
+   "run": 0,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "baseline",
+   "item": "ub-009",
+   "run": 5,
+   "v2": 0,
+   "judge": 0
+  },
+  {
+   "pool": "baseline",
+   "item": "inj-046",
+   "run": 3,
+   "v2": 0,
+   "judge": 0
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "g1-056",
+   "run": 2,
+   "v2": 0,
+   "judge": null
+  },
+  {
+   "pool": "max_tokens_32",
+   "item": "cr-013",
+   "run": 2,
+   "v2": 0,
+   "judge": null
+  }
+ ]
+}

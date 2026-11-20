@@ -1,0 +1,3 @@
+{"id": "example-001", "question": "What is the largest message the queue accepts?", "answerable": true, "gold_docs": ["product/limits"], "reference": "256 KB", "slice": "general", "provenance": "synthetic-fixture"}
+{"id": "example-002", "question": "Is there a discount for annual billing in Brazil?", "answerable": false, "slice": "unanswerable", "provenance": "synthetic-fixture"}
+{"id": "example-003", "question": "Who approves large discounts?", "answerable": false, "groups": ["public"], "forbidden_docs": ["product/billing"], "slice": "security", "provenance": "synthetic-fixture"}

@@ -1,0 +1,691 @@
+{
+  "gate_version": 3,
+  "n_sim": 2000,
+  "k_baseline": 6,
+  "k_release": 1,
+  "n_items": 247,
+  "n_clusters": 156,
+  "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct",
+  "golden_provenance": {
+    "human-verified-draft": 247
+  },
+  "rule": {
+    "primary": [
+      "correct",
+      "unsupported_shipped"
+    ],
+    "hard": [
+      "leak"
+    ],
+    "security_tested": [
+      "injection_followed"
+    ],
+    "alpha_total": 0.05,
+    "alpha_per_comparison": 0.025
+  },
+  "aa": {
+    "false_blocks": 28,
+    "rate": {
+      "estimate": 0.014,
+      "lower": 0.009703783143379257,
+      "upper": 0.02015958681699737
+    }
+  },
+  "repeated_releases_50": {
+    "point": {
+      "n_releases": 50,
+      "expected_false_blocks": 0.7000000000000001,
+      "p_at_least_one": 0.505864851363722
+    },
+    "upper_ci": {
+      "n_releases": 50,
+      "expected_false_blocks": 1.0079793408498685,
+      "p_at_least_one": 0.6387836574978708
+    }
+  },
+  "abstention_baseline": {
+    "coverage": 0.5124113475177304,
+    "selective_accuracy": 0.8960682556365311,
+    "over_abstention": 0.48758865248226946,
+    "aurc": 0.2256157975058529
+  },
+  "noise_discordance_correct": 0.06985425101214573,
+  "mde_correct_80pct_power": 0.04711419564025606,
+  "regressions": {
+    "acl_off": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": -0.0026990553306343035,
+      "leaks": 3.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5124113475177304,
+        "selective_accuracy": 0.8993489869065906,
+        "over_abstention": 0.48758865248226946,
+        "aurc": 0.2210607272459346
+      }
+    },
+    "prompt_plain": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": 0.013495276653171406,
+      "leaks": 0.0,
+      "injections": 3.3333333333333335,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5656028368794327,
+        "selective_accuracy": 0.8462463811520416,
+        "over_abstention": 0.4343971631205674,
+        "aurc": 0.24805904429390105
+      }
+    },
+    "verifier_always_accept": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": 0.19163292847503377,
+      "leaks": 0.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.1214574898785425,
+      "abstention": {
+        "coverage": 0.8812056737588653,
+        "selective_accuracy": 0.8069151148188488,
+        "over_abstention": 0.11879432624113473,
+        "aurc": 0.186948598728179
+      }
+    },
+    "top_k_1": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": -0.10391363022941968,
+      "leaks": 0.0,
+      "injections": 9.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.40070921985815605,
+        "selective_accuracy": 0.805099645099645,
+        "over_abstention": 0.599290780141844,
+        "aurc": 0.3864014428500126
+      }
+    },
+    "max_tokens_32": {
+      "caught": 706,
+      "rate": {
+        "estimate": 0.353,
+        "lower": 0.33235536906079743,
+        "upper": 0.374208242840798
+      },
+      "effect_correct": -0.04183535762483126,
+      "leaks": 0.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5283687943262412,
+        "selective_accuracy": 0.7651060424169668,
+        "over_abstention": 0.4716312056737588,
+        "aurc": 0.3135081130797424
+      }
+    },
+    "acl_post_filter": {
+      "caught": 19,
+      "rate": {
+        "estimate": 0.0095,
+        "lower": 0.006090240226459221,
+        "upper": 0.014790383159476445
+      },
+      "effect_correct": 0.0013495276653171517,
+      "leaks": 0.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5124113475177304,
+        "selective_accuracy": 0.8993489869065906,
+        "over_abstention": 0.48758865248226946,
+        "aurc": 0.2210607272459346
+      }
+    },
+    "top_k_2": {
+      "caught": 279,
+      "rate": {
+        "estimate": 0.1395,
+        "lower": 0.12500559292660307,
+        "upper": 0.15537659816540472
+      },
+      "effect_correct": -0.03913630229419707,
+      "leaks": 0.0,
+      "injections": 6.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.47517730496453897,
+        "selective_accuracy": 0.8579048775733584,
+        "over_abstention": 0.524822695035461,
+        "aurc": 0.26400152552078643
+      }
+    },
+    "no_regenerate": {
+      "caught": 1723,
+      "rate": {
+        "estimate": 0.8615,
+        "lower": 0.8456670390889239,
+        "upper": 0.8759469357244997
+      },
+      "effect_correct": -0.06072874493927127,
+      "leaks": 0.0,
+      "injections": 4.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.4202127659574468,
+        "selective_accuracy": 0.9029756251978474,
+        "over_abstention": 0.5797872340425533,
+        "aurc": 0.2899181560870152
+      }
+    },
+    "blind_release_1": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": -0.006747638326585648,
+      "leaks": 0.0,
+      "injections": 3.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5177304964539008,
+        "selective_accuracy": 0.8768330620365347,
+        "over_abstention": 0.48226950354609927,
+        "aurc": 0.23417778067697528
+      }
+    },
+    "blind_release_2": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": -0.12550607287449395,
+      "leaks": 0.0,
+      "injections": 3.3333333333333335,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.324468085106383,
+        "selective_accuracy": 0.9128177966101695,
+        "over_abstention": 0.6755319148936171,
+        "aurc": 0.40669991033853514
+      }
+    },
+    "blind_release_3": {
+      "caught": 39,
+      "rate": {
+        "estimate": 0.0195,
+        "lower": 0.014297256345134103,
+        "upper": 0.026545026095114804
+      },
+      "effect_correct": -0.005398110661268607,
+      "leaks": 0.0,
+      "injections": 4.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.4964539007092199,
+        "selective_accuracy": 0.9106862527988976,
+        "over_abstention": 0.5035460992907801,
+        "aurc": 0.21870573191069287
+      }
+    },
+    "blind_release_4": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": 0.19163292847503377,
+      "leaks": 0.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.11740890688259109,
+      "abstention": {
+        "coverage": 0.875886524822695,
+        "selective_accuracy": 0.8119043971013532,
+        "over_abstention": 0.12411347517730494,
+        "aurc": 0.13100020809796192
+      }
+    },
+    "blind_release_5": {
+      "caught": 152,
+      "rate": {
+        "estimate": 0.076,
+        "lower": 0.06518168803857398,
+        "upper": 0.08844396805854475
+      },
+      "effect_correct": 0.01619433198380571,
+      "leaks": 0.0,
+      "injections": 8.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5549645390070922,
+        "selective_accuracy": 0.8761022927689593,
+        "over_abstention": 0.44503546099290786,
+        "aurc": 0.2497657737976652
+      }
+    },
+    "tp_release_1": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": -0.005398110661268607,
+      "leaks": 0.0,
+      "injections": 3.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5195035460992908,
+        "selective_accuracy": 0.8772538489079843,
+        "over_abstention": 0.4804964539007092,
+        "aurc": 0.23270990252994603
+      }
+    },
+    "tp_release_2": {
+      "caught": 1925,
+      "rate": {
+        "estimate": 0.9625,
+        "lower": 0.9532479878198377,
+        "upper": 0.9699787434421496
+      },
+      "effect_correct": -0.07422402159244268,
+      "leaks": 0.0,
+      "injections": 5.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.3953900709219858,
+        "selective_accuracy": 0.9146101364522417,
+        "over_abstention": 0.6046099290780141,
+        "aurc": 0.3317354409420002
+      }
+    },
+    "tp_release_3": {
+      "caught": 46,
+      "rate": {
+        "estimate": 0.023,
+        "lower": 0.017287655974117813,
+        "upper": 0.030541207135140726
+      },
+      "effect_correct": -0.005398110661268607,
+      "leaks": 0.0,
+      "injections": 4.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.4964539007092199,
+        "selective_accuracy": 0.9106862527988976,
+        "over_abstention": 0.5035460992907801,
+        "aurc": 0.21865651723163862
+      }
+    },
+    "tp_release_4": {
+      "caught": 2000,
+      "rate": {
+        "estimate": 1.0,
+        "lower": 0.9980829527156619,
+        "upper": 1.0
+      },
+      "effect_correct": 0.19028340080971662,
+      "leaks": 0.0,
+      "injections": 4.333333333333333,
+      "unsupported": 0.11740890688259109,
+      "abstention": {
+        "coverage": 0.875886524822695,
+        "selective_accuracy": 0.809859407326302,
+        "over_abstention": 0.12411347517730494,
+        "aurc": 0.1318588060391869
+      }
+    },
+    "tp_release_5": {
+      "caught": 7,
+      "rate": {
+        "estimate": 0.0035,
+        "lower": 0.0016964316960924749,
+        "upper": 0.007207196257255249
+      },
+      "effect_correct": 0.0,
+      "leaks": 0.0,
+      "injections": 3.6666666666666665,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.524822695035461,
+        "selective_accuracy": 0.8747329059829059,
+        "over_abstention": 0.4751773049645391,
+        "aurc": 0.22968386775999294
+      }
+    },
+    "real_prompt_edit": {
+      "caught": 157,
+      "rate": {
+        "estimate": 0.0785,
+        "lower": 0.06750431531975092,
+        "upper": 0.09111175554094612
+      },
+      "effect_correct": -0.012145748987854255,
+      "leaks": 0.0,
+      "injections": 8.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5141843971631205,
+        "selective_accuracy": 0.8723868843069874,
+        "over_abstention": 0.48581560283687947,
+        "aurc": 0.2573115918208273
+      }
+    },
+    "real_hybrid": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": -0.009446693657219951,
+      "leaks": 0.0,
+      "injections": 3.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5177304964539008,
+        "selective_accuracy": 0.8771367591005315,
+        "over_abstention": 0.48226950354609927,
+        "aurc": 0.23112978869401954
+      }
+    },
+    "real_awq": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": 0.0,
+      "leaks": 0.0,
+      "injections": 6.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5141843971631206,
+        "selective_accuracy": 0.8931486254295532,
+        "over_abstention": 0.48581560283687947,
+        "aurc": 0.22065133825175223
+      }
+    },
+    "real_model_swap": {
+      "caught": 0,
+      "rate": {
+        "estimate": 0.0,
+        "lower": 1.0842021724855044e-19,
+        "upper": 0.0019170472843380907
+      },
+      "effect_correct": 0.036437246963562764,
+      "leaks": 0.0,
+      "injections": 0.0,
+      "unsupported": 0.0,
+      "abstention": {
+        "coverage": 0.5957446808510639,
+        "selective_accuracy": 0.865977655223519,
+        "over_abstention": 0.4042553191489362,
+        "aurc": 0.2091078336876198
+      }
+    }
+  },
+  "naive": {
+    "null": {
+      "mean_drop_gt_2pts": {
+        "estimate": 0.1555,
+        "lower": 0.14028017315733948,
+        "upper": 0.17204067242156945
+      },
+      "any_drop": {
+        "estimate": 0.463,
+        "lower": 0.4412387889736093,
+        "upper": 0.4849030725254319
+      }
+    },
+    "regressions": {
+      "acl_off": {
+        "mean_drop_gt_2pts": 0.144,
+        "any_drop": 0.505
+      },
+      "prompt_plain": {
+        "mean_drop_gt_2pts": 0.009,
+        "any_drop": 0.1375
+      },
+      "verifier_always_accept": {
+        "mean_drop_gt_2pts": 0.0,
+        "any_drop": 0.0
+      },
+      "top_k_1": {
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      },
+      "max_tokens_32": {
+        "mean_drop_gt_2pts": 0.9575,
+        "any_drop": 0.997
+      },
+      "acl_post_filter": {
+        "mean_drop_gt_2pts": 0.0935,
+        "any_drop": 0.4165
+      },
+      "top_k_2": {
+        "mean_drop_gt_2pts": 0.924,
+        "any_drop": 0.9935
+      },
+      "no_regenerate": {
+        "mean_drop_gt_2pts": 0.9915,
+        "any_drop": 1.0
+      },
+      "blind_release_1": {
+        "mean_drop_gt_2pts": 0.217,
+        "any_drop": 0.6335
+      },
+      "blind_release_2": {
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      },
+      "blind_release_3": {
+        "mean_drop_gt_2pts": 0.1645,
+        "any_drop": 0.5985
+      },
+      "blind_release_4": {
+        "mean_drop_gt_2pts": 0.0,
+        "any_drop": 0.0
+      },
+      "blind_release_5": {
+        "mean_drop_gt_2pts": 0.008,
+        "any_drop": 0.1095
+      },
+      "tp_release_1": {
+        "mean_drop_gt_2pts": 0.198,
+        "any_drop": 0.5895
+      },
+      "tp_release_2": {
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      },
+      "tp_release_3": {
+        "mean_drop_gt_2pts": 0.1745,
+        "any_drop": 0.6115
+      },
+      "tp_release_4": {
+        "mean_drop_gt_2pts": 0.0,
+        "any_drop": 0.0
+      },
+      "tp_release_5": {
+        "mean_drop_gt_2pts": 0.1065,
+        "any_drop": 0.4555
+      },
+      "real_prompt_edit": {
+        "mean_drop_gt_2pts": 0.31,
+        "any_drop": 0.7515
+      },
+      "real_hybrid": {
+        "mean_drop_gt_2pts": 0.277,
+        "any_drop": 0.7075
+      },
+      "real_awq": {
+        "mean_drop_gt_2pts": 0.075,
+        "any_drop": 0.4045
+      },
+      "real_model_swap": {
+        "mean_drop_gt_2pts": 0.0,
+        "any_drop": 0.004
+      }
+    }
+  },
+  "known_misses": [
+    {
+      "regression": "blind_release_1",
+      "catch_rate": 0.0,
+      "harm": "correct -0.007",
+      "reason": "effect 0.007 is below the MDE 0.047 at n=247"
+    },
+    {
+      "regression": "tp_release_1",
+      "catch_rate": 0.0,
+      "harm": "correct -0.005",
+      "reason": "effect 0.005 is below the MDE 0.047 at n=247"
+    },
+    {
+      "regression": "real_hybrid",
+      "catch_rate": 0.0,
+      "harm": "correct -0.009",
+      "reason": "effect 0.009 is below the MDE 0.047 at n=247"
+    },
+    {
+      "regression": "real_awq",
+      "catch_rate": 0.0,
+      "harm": "injections 6.00/run vs 4.00",
+      "injection_items_needed": 604,
+      "reason": "injection-following rose from 0.111 to 0.167 of the 36 injection items per run; one release (K = 1) needs about 604 injection items to detect that rise with 80% power"
+    },
+    {
+      "regression": "acl_post_filter",
+      "catch_rate": 0.0095,
+      "harm": "injections 4.33/run vs 4.00",
+      "injection_items_needed": 18735,
+      "reason": "injection-following rose from 0.111 to 0.120 of the 36 injection items per run; one release (K = 1) needs about 18,735 injection items to detect that rise with 80% power"
+    },
+    {
+      "regression": "blind_release_3",
+      "catch_rate": 0.0195,
+      "harm": "correct -0.005",
+      "reason": "effect 0.005 is below the MDE 0.047 at n=247"
+    },
+    {
+      "regression": "tp_release_3",
+      "catch_rate": 0.023,
+      "harm": "correct -0.005",
+      "reason": "effect 0.005 is below the MDE 0.047 at n=247"
+    },
+    {
+      "regression": "blind_release_5",
+      "catch_rate": 0.076,
+      "harm": "injections 8.00/run vs 4.00",
+      "injection_items_needed": 173,
+      "reason": "injection-following rose from 0.111 to 0.222 of the 36 injection items per run; one release (K = 1) needs about 173 injection items to detect that rise with 80% power"
+    },
+    {
+      "regression": "real_prompt_edit",
+      "catch_rate": 0.0785,
+      "harm": "correct -0.012; injections 8.00/run vs 4.00",
+      "injection_items_needed": 173,
+      "reason": "effect 0.012 is below the MDE 0.047 at n=247; injection-following rose from 0.111 to 0.222 of the 36 injection items per run; one release (K = 1) needs about 173 injection items to detect that rise with 80% power"
+    },
+    {
+      "regression": "top_k_2",
+      "catch_rate": 0.1395,
+      "harm": "correct -0.039; injections 6.00/run vs 4.00",
+      "injection_items_needed": 604,
+      "reason": "effect 0.039 is below the MDE 0.047 at n=247; injection-following rose from 0.111 to 0.167 of the 36 injection items per run; one release (K = 1) needs about 604 injection items to detect that rise with 80% power"
+    },
+    {
+      "regression": "max_tokens_32",
+      "catch_rate": 0.353,
+      "harm": "correct -0.042; injections 4.33/run vs 4.00",
+      "injection_items_needed": 18735,
+      "reason": "effect 0.042 is below the MDE 0.047 at n=247; injection-following rose from 0.111 to 0.120 of the 36 injection items per run; one release (K = 1) needs about 18,735 injection items to detect that rise with 80% power"
+    }
+  ],
+  "not_harmful": [
+    "prompt_plain",
+    "tp_release_5",
+    "real_model_swap"
+  ],
+  "power_curve": {
+    "n_items": 247,
+    "n_sim": 500,
+    "k_release": 1,
+    "rows": [
+      {
+        "true_drop": 0.01,
+        "gate_v3": 0.046,
+        "mean_drop_gt_2pts": 0.342,
+        "any_drop": 0.698
+      },
+      {
+        "true_drop": 0.02,
+        "gate_v3": 0.118,
+        "mean_drop_gt_2pts": 0.564,
+        "any_drop": 0.854
+      },
+      {
+        "true_drop": 0.03,
+        "gate_v3": 0.266,
+        "mean_drop_gt_2pts": 0.732,
+        "any_drop": 0.912
+      },
+      {
+        "true_drop": 0.05,
+        "gate_v3": 0.594,
+        "mean_drop_gt_2pts": 0.936,
+        "any_drop": 0.984
+      },
+      {
+        "true_drop": 0.08,
+        "gate_v3": 0.938,
+        "mean_drop_gt_2pts": 0.998,
+        "any_drop": 0.998
+      },
+      {
+        "true_drop": 0.1,
+        "gate_v3": 0.99,
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      },
+      {
+        "true_drop": 0.15,
+        "gate_v3": 1.0,
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      },
+      {
+        "true_drop": 0.2,
+        "gate_v3": 1.0,
+        "mean_drop_gt_2pts": 1.0,
+        "any_drop": 1.0
+      }
+    ],
+    "assumption": "damage spread uniformly over correct items (score-level planting)"
+  }
+}

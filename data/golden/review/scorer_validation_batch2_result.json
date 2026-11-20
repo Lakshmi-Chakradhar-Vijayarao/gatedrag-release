@@ -1,0 +1,519 @@
+{
+ "rows": [
+  {
+   "item": "inj-034",
+   "human": 1,
+   "v1": 0,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-033",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ra-006",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-019",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-033",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-011",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "rb-007",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-035",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "cr-003",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-012",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-048",
+   "human": 1,
+   "v1": 0,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-029",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-031",
+   "human": 1,
+   "v1": 0,
+   "v2": 0,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "cr-005",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-030",
+   "human": 1,
+   "v1": 0,
+   "v2": 0,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ub-009",
+   "human": 1,
+   "v1": 0,
+   "v2": 0,
+   "judge": 0,
+   "note": null
+  },
+  {
+   "item": "inj-039",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-044",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-023",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-060",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-012",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-037",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ra-009",
+   "human": 1,
+   "v1": 1,
+   "v2": 0,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-046",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ub-012",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ra-008",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-024",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-040",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-006",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-017",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-021",
+   "human": 0,
+   "v1": 1,
+   "v2": 1,
+   "judge": 0,
+   "note": "The answer begins with \u201cYes,\u201d which directly contradicts its own correct statement that the server will not initiate PING/PONG checks during normal traffic."
+  },
+  {
+   "item": "g1-036",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-030",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "rb-002",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-041",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-021",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "sec-007",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-004",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ub-013",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-037",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-001",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-007",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-003",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-018",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "cr-008",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "cr-002",
+   "human": 1,
+   "v1": 0,
+   "v2": 0,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "rb-015",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "rb-011",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-032",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-007",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-046",
+   "human": 0,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": "The reference identifies the provider as `terraform-provider-jetstream`; the answer incorrectly gives the provider name as only `jetstream`."
+  },
+  {
+   "item": "g1-038",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "cr-013",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ub-004",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "inj-014",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-027",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g2-016",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "ra-011",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "sec-004",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  },
+  {
+   "item": "g1-044",
+   "human": 1,
+   "v1": 1,
+   "v2": 1,
+   "judge": 1,
+   "note": null
+  }
+ ],
+ "results": {
+  "v1": {
+   "agree": "52/60",
+   "accuracy": 0.867,
+   "ci95": [
+    0.758,
+    0.931
+   ],
+   "false_credit": 2,
+   "false_penalty": 6,
+   "kappa": -0.053
+  },
+  "v2": {
+   "agree": "53/60",
+   "accuracy": 0.883,
+   "ci95": [
+    0.778,
+    0.942
+   ],
+   "false_credit": 2,
+   "false_penalty": 5,
+   "kappa": -0.05
+  },
+  "judge": {
+   "agree": "58/60",
+   "accuracy": 0.967,
+   "ci95": [
+    0.886,
+    0.991
+   ],
+   "false_credit": 1,
+   "false_penalty": 1,
+   "kappa": 0.483
+  }
+ }
+}

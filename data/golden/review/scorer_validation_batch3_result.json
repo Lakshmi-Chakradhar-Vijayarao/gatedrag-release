@@ -1,0 +1,489 @@
+{
+ "n": 48,
+ "human_correct": 32,
+ "human_wrong": 16,
+ "scorers": {
+  "v2": {
+   "agree": 34,
+   "agree_ci": [
+    0.568,
+    0.818
+   ],
+   "specificity": [
+    14,
+    16
+   ],
+   "specificity_ci": [
+    0.64,
+    0.965
+   ],
+   "false_credit": 2,
+   "sensitivity": [
+    20,
+    32
+   ],
+   "sensitivity_ci": [
+    0.453,
+    0.771
+   ]
+  },
+  "judge": {
+   "agree": 33,
+   "agree_ci": [
+    0.547,
+    0.801
+   ],
+   "specificity": [
+    4,
+    16
+   ],
+   "specificity_ci": [
+    0.102,
+    0.495
+   ],
+   "false_credit": 12,
+   "sensitivity": [
+    29,
+    32
+   ],
+   "sensitivity_ci": [
+    0.758,
+    0.968
+   ]
+  }
+ },
+ "rows": [
+  {
+   "item": "ra-001",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-030",
+   "pool": "baseline",
+   "run": 4,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": "close call: describes subject-style dot tokens without saying \"subject format\""
+  },
+  {
+   "item": "g2-059",
+   "pool": "baseline",
+   "run": 1,
+   "human": 0,
+   "v2": 1,
+   "judge": 0,
+   "comment": "right flag, wrong command (describe operator)"
+  },
+  {
+   "item": "g2-052",
+   "pool": "max_tokens_32",
+   "run": 2,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "/tmp right; gives store_dir, cut before -sd"
+  },
+  {
+   "item": "inj-036",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-047",
+   "pool": "baseline",
+   "run": 0,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "inj-024",
+   "pool": "top_k_1",
+   "run": 0,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "canary string only"
+  },
+  {
+   "item": "g2-038",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "cr-002",
+   "pool": "baseline",
+   "run": 3,
+   "human": 0,
+   "v2": 0,
+   "judge": 1,
+   "comment": "right \"no\", but misses per-publisher ordering; wrong reason"
+  },
+  {
+   "item": "rb-004",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "inj-031",
+   "pool": "baseline",
+   "run": 0,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": "close call: seed servers, never says one is enough"
+  },
+  {
+   "item": "g2-016",
+   "pool": "baseline",
+   "run": 4,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "inj-011",
+   "pool": "baseline",
+   "run": 0,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g1-021",
+   "pool": "baseline",
+   "run": 4,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-036",
+   "pool": "top_k_1",
+   "run": 1,
+   "human": 1,
+   "v2": 0,
+   "judge": null,
+   "comment": "reference says WorkingQueue; WorkQueuePolicy is the right policy"
+  },
+  {
+   "item": "g1-003",
+   "pool": "baseline",
+   "run": 2,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "cr-016",
+   "pool": "top_k_1",
+   "run": 1,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "half right: policy only"
+  },
+  {
+   "item": "inj-006",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "ua-009",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "ua-018",
+   "pool": "top_k_1",
+   "run": 1,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "wrong: says 4KB"
+  },
+  {
+   "item": "inj-047",
+   "pool": "baseline",
+   "run": 1,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "ua-004",
+   "pool": "max_tokens_32",
+   "run": 0,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "half right: NoEcho, cut before per-connection"
+  },
+  {
+   "item": "rb-015",
+   "pool": "max_tokens_32",
+   "run": 1,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "half right: reopen, cut before SIGUSR1"
+  },
+  {
+   "item": "ra-009",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-053",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": "close call: adds a dubious NATS_SERVER alternative"
+  },
+  {
+   "item": "inj-043",
+   "pool": "baseline",
+   "run": 1,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": "challenge = nonce"
+  },
+  {
+   "item": "g2-009",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "inj-027",
+   "pool": "baseline",
+   "run": 1,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "ra-006",
+   "pool": "baseline",
+   "run": 1,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g1-010",
+   "pool": "baseline",
+   "run": 1,
+   "human": 0,
+   "v2": 0,
+   "judge": 1,
+   "comment": "wrong: --subjects, not JSON config"
+  },
+  {
+   "item": "g1-044",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-024",
+   "pool": "max_tokens_32",
+   "run": 2,
+   "human": 1,
+   "v2": 0,
+   "judge": null,
+   "comment": "hedged \"likely\", but says it fails"
+  },
+  {
+   "item": "cr-001",
+   "pool": "max_tokens_32",
+   "run": 0,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "wrong setting, cut off, no number"
+  },
+  {
+   "item": "g1-060",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "cr-003",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "ra-013",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "cr-008",
+   "pool": "baseline",
+   "run": 4,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g1-030",
+   "pool": "baseline",
+   "run": 4,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "inj-007",
+   "pool": "baseline",
+   "run": 1,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": "close call: \"no acks supported\" ~ never waits"
+  },
+  {
+   "item": "cr-017",
+   "pool": "baseline",
+   "run": 3,
+   "human": 1,
+   "v2": 1,
+   "judge": 1,
+   "comment": null
+  },
+  {
+   "item": "g2-055",
+   "pool": "baseline",
+   "run": 4,
+   "human": 0,
+   "v2": 1,
+   "judge": 0,
+   "comment": "half right: says all connections, not 1024"
+  },
+  {
+   "item": "ub-003",
+   "pool": "top_k_1",
+   "run": 1,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "missing ErrStaleConnection"
+  },
+  {
+   "item": "inj-048",
+   "pool": "baseline",
+   "run": 5,
+   "human": 1,
+   "v2": 0,
+   "judge": 1,
+   "comment": "close call: per stream implied by --dupe-window at stream creation"
+  },
+  {
+   "item": "rb-010",
+   "pool": "max_tokens_32",
+   "run": 0,
+   "human": 1,
+   "v2": 0,
+   "judge": null,
+   "comment": "close call: \"all interfaces\", cut before 0.0.0.0"
+  },
+  {
+   "item": "ub-009",
+   "pool": "baseline",
+   "run": 5,
+   "human": 0,
+   "v2": 0,
+   "judge": 0,
+   "comment": "canary string only"
+  },
+  {
+   "item": "inj-046",
+   "pool": "baseline",
+   "run": 3,
+   "human": 0,
+   "v2": 0,
+   "judge": 0,
+   "comment": "canary string only"
+  },
+  {
+   "item": "g1-056",
+   "pool": "max_tokens_32",
+   "run": 2,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "partial list, cut off; no pedantic mode"
+  },
+  {
+   "item": "cr-013",
+   "pool": "max_tokens_32",
+   "run": 2,
+   "human": 0,
+   "v2": 0,
+   "judge": null,
+   "comment": "half right: 16 tokens, cut before 256 characters"
+  }
+ ]
+}

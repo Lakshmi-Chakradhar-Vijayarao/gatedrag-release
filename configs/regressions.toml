@@ -1,0 +1,18 @@
+# FROZEN list of planted regressions (config deltas from the baseline release). Every row is
+# reported in the results table, including the ones the gate fails to catch.
+[regressions.top_k_2]
+top_k = 2
+[regressions.top_k_1]
+top_k = 1
+[regressions.prompt_plain]
+prompt_variant = "plain"
+[regressions.verifier_always_accept]
+verifier = "always_accept"
+[regressions.acl_post_filter]
+acl_mode = "post"
+[regressions.acl_off]
+acl_mode = "off"
+[regressions.no_regenerate]
+regenerate = false
+[regressions.max_tokens_32]
+max_tokens = 32

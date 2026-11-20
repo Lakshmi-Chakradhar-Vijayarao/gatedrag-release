@@ -1,0 +1,119 @@
+{
+  "golden": "data/golden/drafts/checked.jsonl",
+  "n_items": 341,
+  "golden_provenance": "llm-draft (NOT reportable)",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "torch": "2.11.0+cu130",
+  "k_baseline": 6,
+  "k_regression": 3,
+  "concurrency": 16,
+  "servers": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "args": []
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "args": [
+        "--quantization",
+        "awq"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2-7B-Instruct",
+      "args": []
+    }
+  ],
+  "pools": {
+    "baseline": {
+      "k": 6,
+      "minutes": 26.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "open_loop": {
+      "k": 2,
+      "minutes": 6.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "acl_off": {
+      "k": 3,
+      "minutes": 13.2,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "prompt_plain": {
+      "k": 3,
+      "minutes": 17.7,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "verifier_always_accept": {
+      "k": 3,
+      "minutes": 9.7,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "top_k_1": {
+      "k": 3,
+      "minutes": 5.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "max_tokens_32": {
+      "k": 3,
+      "minutes": 11.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "acl_post_filter": {
+      "k": 3,
+      "minutes": 13.2,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "top_k_2": {
+      "k": 3,
+      "minutes": 7.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "no_regenerate": {
+      "k": 3,
+      "minutes": 9.7,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_prompt_edit": {
+      "k": 3,
+      "minutes": 15.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_hybrid": {
+      "k": 3,
+      "minutes": 13.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_awq": {
+      "k": 3,
+      "minutes": 13.8,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct-AWQ"
+    },
+    "real_model_swap": {
+      "k": 3,
+      "minutes": 13.2,
+      "generator": "openai-compatible:Qwen/Qwen2-7B-Instruct"
+    }
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "changes_done": [
+    "acl_off",
+    "prompt_plain",
+    "verifier_always_accept",
+    "top_k_1",
+    "max_tokens_32",
+    "acl_post_filter",
+    "top_k_2",
+    "no_regenerate",
+    "real_prompt_edit",
+    "real_hybrid",
+    "real_awq",
+    "real_model_swap"
+  ],
+  "elapsed_h": 3.34,
+  "vllm": "vllm==0.6.6.post1"
+}

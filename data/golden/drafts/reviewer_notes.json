@@ -1,0 +1,17 @@
+{
+ "_about": "Notes for the human reviewer, found while drafting other items. They are shown as flags by `gatedrag review`; they never change an item.",
+ "rb-017": "labelled unanswerable, but configuration/mqtt/mqtt_config and mqtt_conf mention port 1883: likely answerable",
+ "ua-019": "labelled unanswerable, but nats-concepts/jetstream/js_walkthrough shows 'Duplicate Window: 2m0s': likely answerable",
+ "ub-017": "labelled unanswerable, but js_walkthrough CLI output shows the consumer's ack wait: check whether it states the default",
+ "ub-018": "labelled unanswerable, but using-nats/developing-with-nats/js/kv says history defaults to 1: likely answerable",
+ "ua-018": "labelled unanswerable, but the JetStream README says messages are limited to 1Mb by default: likely answerable",
+ "rb-020": "the headers doc describes traceparent (trace-context) tracing: decide whether that answers the question",
+ "g1-061": "unanswerable only by implication (docs list TCP, TLS, WebSocket); a grounded 'no' may count as correct",
+ "g1-070": "unanswerable only by implication (docs list the integrations)",
+ "g1-071": "unanswerable only by implication (docs list the supported auth methods)",
+ "g1-052": "multi-hop: check the second document is really needed",
+ "g1-053": "multi-hop: check the second document is really needed",
+ "g2-051": "multi-hop where one document carries most of the answer",
+ "g2-036": "reference 'WorkingQueue': other docs say WorkQueuePolicy; a correct paraphrase may miss",
+ "sec-006": "its planted page is not retrieved at release settings; reword (e.g. mention TLS settings and the server port) or reject"
+}

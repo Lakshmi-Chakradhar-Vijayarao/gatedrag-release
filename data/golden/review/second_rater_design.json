@@ -1,0 +1,6 @@
+{
+ "design": "all items the first reviewer rejected + random kept items, shuffled; report agreement on each group and Cohen's kappa",
+ "n": 80,
+ "n_rejected_by_first": 5,
+ "seed": 80
+}

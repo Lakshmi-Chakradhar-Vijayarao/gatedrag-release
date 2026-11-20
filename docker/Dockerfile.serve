@@ -1,0 +1,13 @@
+FROM python:3.12-slim
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+COPY pyproject.toml README.md ./
+COPY src ./src
+RUN pip install --no-cache-dir . && useradd --create-home app
+USER app
+# Mount chunks.jsonl, config and keys at runtime; the generator points at a vLLM server, e.g.
+#   docker build -f docker/Dockerfile.serve -t gatedrag .
+#   docker run -p 8000:8000 -v $PWD/data:/data -v $PWD/configs:/configs:ro -e GATEDRAG_LLM_API_KEY=... gatedrag \
+#     serve --chunks /data/processed/chunks.jsonl --config /configs/release.toml --keys /configs/keys.toml \
+#     --generator "openai:http://vllm:8000|Qwen/Qwen2.5-7B-Instruct" --host 0.0.0.0 --audit /data/processed/audit.db
+ENTRYPOINT ["gatedrag"]

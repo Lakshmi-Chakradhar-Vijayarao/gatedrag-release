@@ -1,0 +1,50 @@
+{
+ "ratio_1.5": {
+  "c_wrong_over_c_abstain": 1.5,
+  "p_threshold": 0.3333,
+  "shipped_share": 0.9932885906040269,
+  "selective_accuracy": 0.7657657657657657,
+  "wrong_shipped_per_100": 23.2662192393736,
+  "expected_cost_per_answer": 0.35570469798657717
+ },
+ "ratio_2": {
+  "c_wrong_over_c_abstain": 2.0,
+  "p_threshold": 0.5,
+  "shipped_share": 0.9731543624161074,
+  "selective_accuracy": 0.7724137931034483,
+  "wrong_shipped_per_100": 22.14765100671141,
+  "expected_cost_per_answer": 0.4697986577181208
+ },
+ "ratio_3": {
+  "c_wrong_over_c_abstain": 3.0,
+  "p_threshold": 0.6667,
+  "shipped_share": 0.7069351230425056,
+  "selective_accuracy": 0.8354430379746836,
+  "wrong_shipped_per_100": 11.6331096196868,
+  "expected_cost_per_answer": 0.6420581655480985
+ },
+ "ratio_4": {
+  "c_wrong_over_c_abstain": 4.0,
+  "p_threshold": 0.75,
+  "shipped_share": 0.43400447427293065,
+  "selective_accuracy": 0.9020618556701031,
+  "wrong_shipped_per_100": 4.250559284116331,
+  "expected_cost_per_answer": 0.7360178970917226
+ },
+ "ratio_6": {
+  "c_wrong_over_c_abstain": 6.0,
+  "p_threshold": 0.8333,
+  "shipped_share": 0.43400447427293065,
+  "selective_accuracy": 0.9020618556701031,
+  "wrong_shipped_per_100": 4.250559284116331,
+  "expected_cost_per_answer": 0.8210290827740492
+ },
+ "ratio_10": {
+  "c_wrong_over_c_abstain": 10.0,
+  "p_threshold": 0.9,
+  "shipped_share": 0.378076062639821,
+  "selective_accuracy": 0.9112426035502958,
+  "wrong_shipped_per_100": 3.3557046979865772,
+  "expected_cost_per_answer": 0.9574944071588367
+ }
+}

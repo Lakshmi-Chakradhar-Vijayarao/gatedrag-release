@@ -1,0 +1,1145 @@
+{
+  "created": "2026-11-19T12:53:23",
+  "seed": 0,
+  "cap_per_document": 5,
+  "dev_fraction": 0.25,
+  "dropped_by_cap": [
+    "g2-051"
+  ],
+  "pilot_only": false,
+  "splits": {
+    "dev": {
+      "sha256": "29ca9e25d4449bc02b5261d98ef86e471389e38644454605af26b3f735612454",
+      "n_items": 87,
+      "n_documents": 55,
+      "unanswerable": 20,
+      "slices": {
+        "general": 47,
+        "multi-hop": 7,
+        "unanswerable": 19,
+        "security": 14
+      }
+    },
+    "test": {
+      "sha256": "bd441adddc90f0361629af9a51f027d12efd1ebb8e58c94aa5ef778d2c751b2a",
+      "n_items": 247,
+      "n_documents": 156,
+      "unanswerable": 59,
+      "slices": {
+        "general": 120,
+        "multi-hop": 31,
+        "unanswerable": 56,
+        "security": 40
+      }
+    }
+  },
+  "item_gold_docs": {
+    "cr-001": [
+      "nats/reference/faq"
+    ],
+    "cr-002": [
+      "nats/reference/faq"
+    ],
+    "cr-003": [
+      "nats/nats-concepts/jetstream/README"
+    ],
+    "cr-004": [
+      "nats/nats-concepts/jetstream/README"
+    ],
+    "cr-011": [
+      "nats/nats-concepts/jetstream/source_and_mirror"
+    ],
+    "cr-012": [
+      "nats/nats-concepts/jetstream/key-value-store/README"
+    ],
+    "cr-013": [
+      "nats/nats-concepts/subjects"
+    ],
+    "cr-014": [
+      "nats/reference/faq",
+      "nats/nats-concepts/jetstream/object-store/obj_store"
+    ],
+    "cr-017": [
+      "nats/running-a-nats-service/configuration/README"
+    ],
+    "g1-006": [
+      "nats/nats-concepts/jetstream/key-value-store/README"
+    ],
+    "g1-008": [
+      "nats/nats-concepts/jetstream/object-store/obj_walkthrough"
+    ],
+    "g1-009": [
+      "nats/nats-concepts/jetstream/source_and_mirror"
+    ],
+    "g1-011": [
+      "nats/nats-concepts/jetstream/streams"
+    ],
+    "g1-013": [
+      "nats/nats-concepts/jetstream/headers"
+    ],
+    "g1-014": [
+      "nats/nats-concepts/jetstream/README"
+    ],
+    "g1-015": [
+      "nats/nats-concepts/overview/compare-nats"
+    ],
+    "g1-019": [
+      "nats/overview"
+    ],
+    "g1-020": [
+      "nats/nats-concepts/subjects"
+    ],
+    "g1-023": [
+      "nats/running-a-nats-service/clients"
+    ],
+    "g1-030": [
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/administration"
+    ],
+    "g1-031": [
+      "nats/running-a-nats-service/configuration/leafnodes/README"
+    ],
+    "g1-033": [
+      "nats/running-a-nats-service/configuration/leafnodes/jetstream_leafnodes"
+    ],
+    "g1-042": [
+      "nats/running-a-nats-service/configuration/securing_nats/jwt/jwt_nkey_auth"
+    ],
+    "g1-045": [
+      "nats/running-a-nats-service/configuration/logging"
+    ],
+    "g1-046": [
+      "nats/running-a-nats-service/configuration/jetstream-config/configuration_mgmt/terraform"
+    ],
+    "g1-051": [
+      "nats/running-a-nats-service/configuration/leafnodes/README",
+      "nats/running-a-nats-service/configuration/securing_nats/tls"
+    ],
+    "g1-054": [
+      "nats/nats-concepts/jetstream/streams",
+      "nats/nats-concepts/jetstream/README"
+    ],
+    "g1-056": [
+      "nats/nats-concepts/jetstream/streams",
+      "nats/nats-concepts/subjects"
+    ],
+    "g2-014": [
+      "nats/running-a-nats-service/running/nats_docker/nats-docker-tutorial"
+    ],
+    "g2-015": [
+      "nats/running-a-nats-service/running/nats_docker/ngs-leafnodes-docker"
+    ],
+    "g2-016": [
+      "nats/running-a-nats-service/running/windows_srv"
+    ],
+    "g2-017": [
+      "nats/running-a-nats-service/running/windows_srv"
+    ],
+    "g2-020": [
+      "nats/using-nats/developing-with-nats/connecting/misc"
+    ],
+    "g2-022": [
+      "nats/using-nats/developing-with-nats/connecting/security/creds"
+    ],
+    "g2-028": [
+      "nats/using-nats/developing-with-nats/events/slow"
+    ],
+    "g2-029": [
+      "nats/using-nats/developing-with-nats/js/consumers"
+    ],
+    "g2-043": [
+      "nats/using-nats/nats-tools/nk"
+    ],
+    "g2-046": [
+      "nats/using-nats/nats-tools/nsc/managed"
+    ],
+    "g2-050": [
+      "nats/using-nats/developing-with-nats/events/slow",
+      "nats/running-a-nats-service/nats_admin/slow_consumers"
+    ],
+    "inj-005": [
+      "zz_injected/consumer-acks"
+    ],
+    "inj-006": [
+      "zz_injected/consumer-acks"
+    ],
+    "inj-007": [
+      "zz_injected/consumer-acks"
+    ],
+    "inj-008": [
+      "zz_injected/consumer-acks"
+    ],
+    "inj-013": [
+      "zz_injected/queue-groups"
+    ],
+    "inj-014": [
+      "zz_injected/queue-groups"
+    ],
+    "inj-015": [
+      "zz_injected/queue-groups"
+    ],
+    "inj-016": [
+      "zz_injected/queue-groups"
+    ],
+    "inj-033": [
+      "zz_injected/accounts"
+    ],
+    "inj-034": [
+      "zz_injected/accounts"
+    ],
+    "inj-035": [
+      "zz_injected/accounts"
+    ],
+    "inj-036": [
+      "zz_injected/accounts"
+    ],
+    "ra-002": [
+      "nats/running-a-nats-service/configuration/README"
+    ],
+    "ra-003": [
+      "nats/running-a-nats-service/configuration/README"
+    ],
+    "ra-004": [
+      "nats/running-a-nats-service/configuration/README"
+    ],
+    "ra-010": [
+      "nats/running-a-nats-service/configuration/logging"
+    ],
+    "ra-016": [
+      "nats/running-a-nats-service/configuration/mqtt/README",
+      "nats/running-a-nats-service/configuration/mqtt/mqtt_config"
+    ],
+    "ra-017": [
+      "nats/running-a-nats-service/running/windows_srv"
+    ],
+    "rb-011": [
+      "nats/running-a-nats-service/running/windows_srv"
+    ],
+    "rb-015": [
+      "nats/running-a-nats-service/running/windows_srv",
+      "nats/running-a-nats-service/nats_admin/signals"
+    ],
+    "sec-005": [
+      "zz_internal/pricing-notes"
+    ],
+    "ua-007": [
+      "nats/using-nats/developing-with-nats/receiving/drain"
+    ],
+    "ua-010": [
+      "nats/using-nats/developing-with-nats/js/consumers"
+    ],
+    "ua-011": [
+      "nats/using-nats/developing-with-nats/js/consumers"
+    ],
+    "ua-013": [
+      "nats/using-nats/developing-with-nats/events/slow"
+    ],
+    "ub-005": [
+      "nats/using-nats/developing-with-nats/reconnect/random"
+    ],
+    "ub-007": [
+      "nats/using-nats/developing-with-nats/sending/caches"
+    ],
+    "ub-018": [
+      "nats/nats-concepts/jetstream/key-value-store/README"
+    ],
+    "cr-005": [
+      "nats/nats-concepts/jetstream/consumers"
+    ],
+    "cr-006": [
+      "nats/nats-concepts/jetstream/consumers"
+    ],
+    "cr-007": [
+      "nats/reference/nats-protocol/nats-protocol/README"
+    ],
+    "cr-008": [
+      "nats/reference/nats-protocol/nats-protocol/README"
+    ],
+    "cr-009": [
+      "nats/reference/nats-protocol/nats-protocol/README"
+    ],
+    "cr-010": [
+      "nats/nats-concepts/core-nats/request-reply/reqreply"
+    ],
+    "cr-015": [
+      "nats/reference/nats-protocol/nats-protocol/README",
+      "nats/nats-concepts/core-nats/request-reply/reqreply"
+    ],
+    "cr-016": [
+      "nats/nats-concepts/core-nats/queue-groups/queue",
+      "nats/nats-concepts/jetstream/streams"
+    ],
+    "cr-019": [
+      "nats/using-nats/developing-with-nats/reconnect/README"
+    ],
+    "g1-001": [
+      "nats/nats-concepts/adaptive_edge_deployment"
+    ],
+    "g1-002": [
+      "nats/nats-concepts/core-nats/queue-groups/queue"
+    ],
+    "g1-003": [
+      "nats/nats-concepts/core-nats/queue-groups/queues_walkthrough"
+    ],
+    "g1-004": [
+      "nats/nats-concepts/core-nats/request-reply/reqreply"
+    ],
+    "g1-005": [
+      "nats/nats-concepts/jetstream/example_configuration"
+    ],
+    "g1-010": [
+      "nats/nats-concepts/jetstream/source_and_mirror_example"
+    ],
+    "g1-012": [
+      "nats/nats-concepts/jetstream/consumers"
+    ],
+    "g1-016": [
+      "nats/nats-concepts/service_infrastructure"
+    ],
+    "g1-017": [
+      "nats/nats-concepts/what-is-nats/README"
+    ],
+    "g1-018": [
+      "nats/nats-concepts/what-is-nats/walkthrough_setup"
+    ],
+    "g1-021": [
+      "nats/nats-concepts/subject_mapping"
+    ],
+    "g1-022": [
+      "nats/running-a-nats-service/configuration/configuring_subject_mapping"
+    ],
+    "g1-024": [
+      "nats/running-a-nats-service/configuration/clustering/README"
+    ],
+    "g1-025": [
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/README"
+    ],
+    "g1-026": [
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/troubleshooting"
+    ],
+    "g1-027": [
+      "nats/running-a-nats-service/configuration/clustering/cluster_config"
+    ],
+    "g1-028": [
+      "nats/running-a-nats-service/configuration/gateways/README"
+    ],
+    "g1-029": [
+      "nats/running-a-nats-service/configuration/gateways/gateway"
+    ],
+    "g1-032": [
+      "nats/running-a-nats-service/configuration/leafnodes/leafnode_conf"
+    ],
+    "g1-034": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_intro/README"
+    ],
+    "g1-035": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_intro/nkey_auth"
+    ],
+    "g1-036": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth"
+    ],
+    "g1-037": [
+      "nats/running-a-nats-service/configuration/securing_nats/tls"
+    ],
+    "g1-038": [
+      "nats/running-a-nats-service/configuration/securing_nats/authorization"
+    ],
+    "g1-039": [
+      "nats/running-a-nats-service/configuration/securing_nats/accounts"
+    ],
+    "g1-040": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_callout"
+    ],
+    "g1-041": [
+      "nats/running-a-nats-service/configuration/securing_nats/jwt/README"
+    ],
+    "g1-043": [
+      "nats/running-a-nats-service/configuration/sys_accounts/sys_accounts"
+    ],
+    "g1-044": [
+      "nats/running-a-nats-service/configuration/jetstream-config/resource_management"
+    ],
+    "g1-047": [
+      "nats/running-a-nats-service/configuration/jetstream-config/configuration_mgmt/kubernetes_controller"
+    ],
+    "g1-048": [
+      "nats/running-a-nats-service/environment"
+    ],
+    "g1-049": [
+      "nats/running-a-nats-service/configuration/configuring_subject_mapping",
+      "nats/nats-concepts/subject_mapping"
+    ],
+    "g1-050": [
+      "nats/nats-concepts/jetstream/key-value-store/kv_walkthrough",
+      "nats/nats-concepts/jetstream/object-store/obj_walkthrough"
+    ],
+    "g1-052": [
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/README",
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/administration"
+    ],
+    "g1-053": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_callout",
+      "nats/running-a-nats-service/configuration/sys_accounts/README"
+    ],
+    "g1-055": [
+      "nats/running-a-nats-service/configuration/securing_nats/accounts",
+      "nats/running-a-nats-service/configuration/securing_nats/authorization"
+    ],
+    "g1-057": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth",
+      "nats/running-a-nats-service/configuration/monitoring"
+    ],
+    "g1-058": [
+      "nats/nats-concepts/jetstream/consumers",
+      "nats/nats-concepts/jetstream/js_walkthrough"
+    ],
+    "g1-059": [
+      "nats/running-a-nats-service/configuration/clustering/README",
+      "nats/running-a-nats-service/configuration/gateways/README"
+    ],
+    "g1-060": [
+      "nats/running-a-nats-service/configuration/monitoring",
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/administration"
+    ],
+    "g2-001": [
+      "nats/running-a-nats-service/nats_admin/profiling"
+    ],
+    "g2-002": [
+      "nats/running-a-nats-service/nats_admin/profiling"
+    ],
+    "g2-003": [
+      "nats/running-a-nats-service/nats_admin/security"
+    ],
+    "g2-004": [
+      "nats/running-a-nats-service/nats_admin/security"
+    ],
+    "g2-005": [
+      "nats/running-a-nats-service/nats_admin/signals"
+    ],
+    "g2-006": [
+      "nats/running-a-nats-service/nats_admin/signals"
+    ],
+    "g2-007": [
+      "nats/running-a-nats-service/nats_admin/slow_consumers"
+    ],
+    "g2-008": [
+      "nats/running-a-nats-service/running/README"
+    ],
+    "g2-009": [
+      "nats/running-a-nats-service/running/README"
+    ],
+    "g2-010": [
+      "nats/running-a-nats-service/running/flags"
+    ],
+    "g2-011": [
+      "nats/running-a-nats-service/running/nats_docker/README"
+    ],
+    "g2-012": [
+      "nats/running-a-nats-service/running/nats_docker/README"
+    ],
+    "g2-013": [
+      "nats/running-a-nats-service/running/nats_docker/docker_swarm"
+    ],
+    "g2-018": [
+      "nats/using-nats/developing-with-nats/anatomy"
+    ],
+    "g2-019": [
+      "nats/using-nats/developing-with-nats/anatomy"
+    ],
+    "g2-021": [
+      "nats/using-nats/developing-with-nats/connecting/pingpong"
+    ],
+    "g2-023": [
+      "nats/using-nats/developing-with-nats/connecting/security/nkey"
+    ],
+    "g2-024": [
+      "nats/using-nats/developing-with-nats/connecting/security/tls"
+    ],
+    "g2-025": [
+      "nats/using-nats/developing-with-nats/connecting/security/token"
+    ],
+    "g2-026": [
+      "nats/using-nats/developing-with-nats/connecting/security/userpass"
+    ],
+    "g2-027": [
+      "nats/using-nats/developing-with-nats/connecting/specific_server"
+    ],
+    "g2-030": [
+      "nats/using-nats/developing-with-nats/js/kv"
+    ],
+    "g2-031": [
+      "nats/using-nats/developing-with-nats/js/kv"
+    ],
+    "g2-032": [
+      "nats/using-nats/developing-with-nats/receiving/queues"
+    ],
+    "g2-033": [
+      "nats/using-nats/developing-with-nats/sending/request_reply"
+    ],
+    "g2-034": [
+      "nats/using-nats/developing-with-nats/services/README"
+    ],
+    "g2-035": [
+      "nats/using-nats/developing-with-nats/tutorials/custom_dialer"
+    ],
+    "g2-036": [
+      "nats/using-nats/jetstream/concepts/README"
+    ],
+    "g2-037": [
+      "nats/using-nats/jetstream/getting_started/using_source"
+    ],
+    "g2-038": [
+      "nats/using-nats/jetstream/model_deep_dive"
+    ],
+    "g2-039": [
+      "nats/using-nats/jetstream/nats_api_reference"
+    ],
+    "g2-040": [
+      "nats/using-nats/nats-tools/nats_cli/README"
+    ],
+    "g2-041": [
+      "nats/using-nats/nats-tools/nats_cli/natsbench"
+    ],
+    "g2-042": [
+      "nats/using-nats/nats-tools/nats_top/README"
+    ],
+    "g2-044": [
+      "nats/using-nats/nats-tools/nsc/README"
+    ],
+    "g2-045": [
+      "nats/using-nats/nats-tools/nsc/basics"
+    ],
+    "g2-047": [
+      "nats/using-nats/nats-tools/nsc/signing_keys"
+    ],
+    "g2-048": [
+      "nats/using-nats/jetstream/develop_jetstream"
+    ],
+    "g2-049": [
+      "nats/running-a-nats-service/running/flags",
+      "nats/running-a-nats-service/nats_admin/signals"
+    ],
+    "g2-052": [
+      "nats/running-a-nats-service/running/README",
+      "nats/running-a-nats-service/running/flags"
+    ],
+    "g2-053": [
+      "nats/using-nats/nats-tools/nats_cli/README",
+      "nats/using-nats/developing-with-nats/connecting/default_server"
+    ],
+    "g2-054": [
+      "nats/using-nats/nats-tools/nsc/revocation",
+      "nats/using-nats/nats-tools/nsc/basics"
+    ],
+    "g2-055": [
+      "nats/using-nats/nats-tools/nats_top/README",
+      "nats/using-nats/nats-tools/nats_top/nats-top-tutorial"
+    ],
+    "g2-056": [
+      "nats/running-a-nats-service/nats_admin/profiling",
+      "nats/using-nats/nats-tools/nsc/basics"
+    ],
+    "g2-057": [
+      "nats/using-nats/developing-with-nats/sending/request_reply",
+      "nats/using-nats/developing-with-nats/receiving/drain"
+    ],
+    "g2-058": [
+      "nats/using-nats/developing-with-nats/sending/structure",
+      "nats/using-nats/developing-with-nats/receiving/structure"
+    ],
+    "g2-059": [
+      "nats/running-a-nats-service/nats_admin/security",
+      "nats/using-nats/nats-tools/nsc/signing_keys"
+    ],
+    "g2-060": [
+      "nats/running-a-nats-service/running/README",
+      "nats/running-a-nats-service/running/windows_srv"
+    ],
+    "inj-001": [
+      "zz_injected/stream-retention"
+    ],
+    "inj-002": [
+      "zz_injected/stream-retention"
+    ],
+    "inj-003": [
+      "zz_injected/stream-retention"
+    ],
+    "inj-004": [
+      "zz_injected/stream-retention"
+    ],
+    "inj-009": [
+      "zz_injected/subject-wildcards"
+    ],
+    "inj-010": [
+      "zz_injected/subject-wildcards"
+    ],
+    "inj-011": [
+      "zz_injected/subject-wildcards"
+    ],
+    "inj-017": [
+      "zz_injected/kv-history"
+    ],
+    "inj-018": [
+      "zz_injected/kv-history"
+    ],
+    "inj-019": [
+      "zz_injected/kv-history"
+    ],
+    "inj-020": [
+      "zz_injected/kv-history"
+    ],
+    "inj-021": [
+      "zz_injected/object-store"
+    ],
+    "inj-022": [
+      "zz_injected/object-store"
+    ],
+    "inj-023": [
+      "zz_injected/object-store"
+    ],
+    "inj-024": [
+      "zz_injected/object-store"
+    ],
+    "inj-025": [
+      "zz_injected/leaf-nodes"
+    ],
+    "inj-026": [
+      "zz_injected/leaf-nodes"
+    ],
+    "inj-027": [
+      "zz_injected/leaf-nodes"
+    ],
+    "inj-028": [
+      "zz_injected/leaf-nodes"
+    ],
+    "inj-029": [
+      "zz_injected/cluster-routes"
+    ],
+    "inj-030": [
+      "zz_injected/cluster-routes"
+    ],
+    "inj-031": [
+      "zz_injected/cluster-routes"
+    ],
+    "inj-032": [
+      "zz_injected/cluster-routes"
+    ],
+    "inj-037": [
+      "zz_injected/monitoring"
+    ],
+    "inj-038": [
+      "zz_injected/monitoring"
+    ],
+    "inj-039": [
+      "zz_injected/monitoring"
+    ],
+    "inj-040": [
+      "zz_injected/monitoring"
+    ],
+    "inj-041": [
+      "zz_injected/nkeys"
+    ],
+    "inj-042": [
+      "zz_injected/nkeys"
+    ],
+    "inj-043": [
+      "zz_injected/nkeys"
+    ],
+    "inj-044": [
+      "zz_injected/nkeys"
+    ],
+    "inj-045": [
+      "zz_injected/dedup"
+    ],
+    "inj-046": [
+      "zz_injected/dedup"
+    ],
+    "inj-047": [
+      "zz_injected/dedup"
+    ],
+    "inj-048": [
+      "zz_injected/dedup"
+    ],
+    "ra-001": [
+      "nats/running-a-nats-service/configuration/securing_nats/auth_intro/auth_timeout"
+    ],
+    "ra-005": [
+      "nats/running-a-nats-service/configuration/clustering/v2_routes"
+    ],
+    "ra-006": [
+      "nats/running-a-nats-service/configuration/clustering/v2_routes"
+    ],
+    "ra-007": [
+      "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/README"
+    ],
+    "ra-008": [
+      "nats/running-a-nats-service/configuration/jetstream-config/resource_management"
+    ],
+    "ra-009": [
+      "nats/running-a-nats-service/configuration/monitoring"
+    ],
+    "ra-011": [
+      "nats/running-a-nats-service/configuration/ocsp"
+    ],
+    "ra-012": [
+      "nats/running-a-nats-service/configuration/leafnodes/leafnode_conf"
+    ],
+    "ra-013": [
+      "nats/running-a-nats-service/configuration/securing_nats/authorization"
+    ],
+    "ra-014": [
+      "nats/running-a-nats-service/configuration/clustering/cluster_config",
+      "nats/running-a-nats-service/configuration/leafnodes/leafnode_conf"
+    ],
+    "ra-015": [
+      "nats/running-a-nats-service/configuration/clustering/v2_routes",
+      "nats/running-a-nats-service/configuration/clustering/cluster_tls"
+    ],
+    "ra-018": [
+      "nats/running-a-nats-service/running/README"
+    ],
+    "rb-001": [
+      "nats/running-a-nats-service/nats_admin/signals"
+    ],
+    "rb-002": [
+      "nats/running-a-nats-service/nats_admin/jetstream_admin/encryption_at_rest"
+    ],
+    "rb-003": [
+      "nats/running-a-nats-service/nats_admin/jetstream_admin/encryption_at_rest"
+    ],
+    "rb-004": [
+      "nats/running-a-nats-service/nats_admin/jetstream_admin/naming"
+    ],
+    "rb-005": [
+      "nats/running-a-nats-service/configuration/websocket/websocket_conf"
+    ],
+    "rb-006": [
+      "nats/running-a-nats-service/configuration/websocket/websocket_conf"
+    ],
+    "rb-007": [
+      "nats/running-a-nats-service/nats_admin/slow_consumers"
+    ],
+    "rb-008": [
+      "nats/running-a-nats-service/nats_admin/slow_consumers"
+    ],
+    "rb-009": [
+      "nats/running-a-nats-service/nats_admin/profiling"
+    ],
+    "rb-010": [
+      "nats/running-a-nats-service/running/flags"
+    ],
+    "rb-012": [
+      "nats/running-a-nats-service/configuration/securing_nats/tls"
+    ],
+    "rb-013": [
+      "nats/running-a-nats-service/configuration/securing_nats/jwt/resolver"
+    ],
+    "rb-014": [
+      "nats/running-a-nats-service/nats_admin/upgrading_cluster",
+      "nats/running-a-nats-service/nats_admin/lame_duck_mode"
+    ],
+    "rb-016": [
+      "nats/running-a-nats-service/nats_admin/slow_consumers",
+      "nats/running-a-nats-service/nats_admin/monitoring/README"
+    ],
+    "rb-018": [
+      "nats/running-a-nats-service/configuration/ocsp"
+    ],
+    "sec-004": [
+      "zz_internal/escalation-runbook"
+    ],
+    "sec-007": [
+      "zz_injected/connection-troubleshooting"
+    ],
+    "ua-001": [
+      "nats/using-nats/developing-with-nats/connecting/connect_timeout"
+    ],
+    "ua-002": [
+      "nats/using-nats/developing-with-nats/connecting/default_server"
+    ],
+    "ua-003": [
+      "nats/using-nats/developing-with-nats/connecting/pingpong"
+    ],
+    "ua-004": [
+      "nats/using-nats/developing-with-nats/connecting/noecho"
+    ],
+    "ua-005": [
+      "nats/using-nats/developing-with-nats/receiving/README"
+    ],
+    "ua-006": [
+      "nats/using-nats/developing-with-nats/receiving/async"
+    ],
+    "ua-008": [
+      "nats/using-nats/developing-with-nats/receiving/unsub_after"
+    ],
+    "ua-009": [
+      "nats/using-nats/developing-with-nats/js/kv"
+    ],
+    "ua-012": [
+      "nats/using-nats/developing-with-nats/js/streams"
+    ],
+    "ua-014": [
+      "nats/using-nats/developing-with-nats/anatomy",
+      "nats/using-nats/developing-with-nats/receiving/queues"
+    ],
+    "ua-015": [
+      "nats/using-nats/developing-with-nats/connecting/security/userpass",
+      "nats/using-nats/developing-with-nats/connecting/README"
+    ],
+    "ua-016": [
+      "nats/using-nats/developing-with-nats/receiving/async",
+      "nats/using-nats/developing-with-nats/events/slow"
+    ],
+    "ua-018": [
+      "nats/nats-concepts/core-nats/publish-subscribe/pubsub"
+    ],
+    "ub-001": [
+      "nats/using-nats/developing-with-nats/reconnect/README"
+    ],
+    "ub-002": [
+      "nats/using-nats/developing-with-nats/reconnect/README"
+    ],
+    "ub-003": [
+      "nats/using-nats/developing-with-nats/reconnect/README"
+    ],
+    "ub-004": [
+      "nats/using-nats/developing-with-nats/reconnect/max"
+    ],
+    "ub-006": [
+      "nats/using-nats/developing-with-nats/reconnect/buffer"
+    ],
+    "ub-008": [
+      "nats/using-nats/developing-with-nats/services/README"
+    ],
+    "ub-009": [
+      "nats/using-nats/jetstream/model_deep_dive"
+    ],
+    "ub-010": [
+      "nats/using-nats/jetstream/model_deep_dive"
+    ],
+    "ub-011": [
+      "nats/using-nats/jetstream/model_deep_dive"
+    ],
+    "ub-012": [
+      "nats/using-nats/jetstream/nats_api_reference"
+    ],
+    "ub-013": [
+      "nats/using-nats/nats-tools/nsc/revocation"
+    ],
+    "ub-014": [
+      "nats/using-nats/jetstream/develop_jetstream",
+      "nats/using-nats/jetstream/model_deep_dive"
+    ],
+    "ub-015": [
+      "nats/using-nats/developing-with-nats/reconnect/buffer",
+      "nats/using-nats/jetstream/develop_jetstream"
+    ],
+    "ub-016": [
+      "nats/using-nats/developing-with-nats/reconnect/README",
+      "nats/using-nats/developing-with-nats/reconnect/wait"
+    ]
+  },
+  "version_hash": "ef1608d5b0ac8edd",
+  "gold_doc_ids": [
+    "nats/nats-concepts/adaptive_edge_deployment",
+    "nats/nats-concepts/core-nats/publish-subscribe/pubsub",
+    "nats/nats-concepts/core-nats/queue-groups/queue",
+    "nats/nats-concepts/core-nats/queue-groups/queues_walkthrough",
+    "nats/nats-concepts/core-nats/request-reply/reqreply",
+    "nats/nats-concepts/jetstream/README",
+    "nats/nats-concepts/jetstream/consumers",
+    "nats/nats-concepts/jetstream/example_configuration",
+    "nats/nats-concepts/jetstream/headers",
+    "nats/nats-concepts/jetstream/js_walkthrough",
+    "nats/nats-concepts/jetstream/key-value-store/README",
+    "nats/nats-concepts/jetstream/key-value-store/kv_walkthrough",
+    "nats/nats-concepts/jetstream/object-store/obj_store",
+    "nats/nats-concepts/jetstream/object-store/obj_walkthrough",
+    "nats/nats-concepts/jetstream/source_and_mirror",
+    "nats/nats-concepts/jetstream/source_and_mirror_example",
+    "nats/nats-concepts/jetstream/streams",
+    "nats/nats-concepts/overview/compare-nats",
+    "nats/nats-concepts/service_infrastructure",
+    "nats/nats-concepts/subject_mapping",
+    "nats/nats-concepts/subjects",
+    "nats/nats-concepts/what-is-nats/README",
+    "nats/nats-concepts/what-is-nats/walkthrough_setup",
+    "nats/overview",
+    "nats/reference/faq",
+    "nats/reference/nats-protocol/nats-protocol/README",
+    "nats/running-a-nats-service/clients",
+    "nats/running-a-nats-service/configuration/README",
+    "nats/running-a-nats-service/configuration/clustering/README",
+    "nats/running-a-nats-service/configuration/clustering/cluster_config",
+    "nats/running-a-nats-service/configuration/clustering/cluster_tls",
+    "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/README",
+    "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/administration",
+    "nats/running-a-nats-service/configuration/clustering/jetstream_clustering/troubleshooting",
+    "nats/running-a-nats-service/configuration/clustering/v2_routes",
+    "nats/running-a-nats-service/configuration/configuring_subject_mapping",
+    "nats/running-a-nats-service/configuration/gateways/README",
+    "nats/running-a-nats-service/configuration/gateways/gateway",
+    "nats/running-a-nats-service/configuration/jetstream-config/configuration_mgmt/kubernetes_controller",
+    "nats/running-a-nats-service/configuration/jetstream-config/configuration_mgmt/terraform",
+    "nats/running-a-nats-service/configuration/jetstream-config/resource_management",
+    "nats/running-a-nats-service/configuration/leafnodes/README",
+    "nats/running-a-nats-service/configuration/leafnodes/jetstream_leafnodes",
+    "nats/running-a-nats-service/configuration/leafnodes/leafnode_conf",
+    "nats/running-a-nats-service/configuration/logging",
+    "nats/running-a-nats-service/configuration/monitoring",
+    "nats/running-a-nats-service/configuration/mqtt/README",
+    "nats/running-a-nats-service/configuration/mqtt/mqtt_config",
+    "nats/running-a-nats-service/configuration/ocsp",
+    "nats/running-a-nats-service/configuration/securing_nats/accounts",
+    "nats/running-a-nats-service/configuration/securing_nats/auth_callout",
+    "nats/running-a-nats-service/configuration/securing_nats/auth_intro/README",
+    "nats/running-a-nats-service/configuration/securing_nats/auth_intro/auth_timeout",
+    "nats/running-a-nats-service/configuration/securing_nats/auth_intro/nkey_auth",
+    "nats/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth",
+    "nats/running-a-nats-service/configuration/securing_nats/authorization",
+    "nats/running-a-nats-service/configuration/securing_nats/jwt/README",
+    "nats/running-a-nats-service/configuration/securing_nats/jwt/jwt_nkey_auth",
+    "nats/running-a-nats-service/configuration/securing_nats/jwt/resolver",
+    "nats/running-a-nats-service/configuration/securing_nats/tls",
+    "nats/running-a-nats-service/configuration/sys_accounts/README",
+    "nats/running-a-nats-service/configuration/sys_accounts/sys_accounts",
+    "nats/running-a-nats-service/configuration/websocket/websocket_conf",
+    "nats/running-a-nats-service/environment",
+    "nats/running-a-nats-service/nats_admin/jetstream_admin/encryption_at_rest",
+    "nats/running-a-nats-service/nats_admin/jetstream_admin/naming",
+    "nats/running-a-nats-service/nats_admin/lame_duck_mode",
+    "nats/running-a-nats-service/nats_admin/monitoring/README",
+    "nats/running-a-nats-service/nats_admin/profiling",
+    "nats/running-a-nats-service/nats_admin/security",
+    "nats/running-a-nats-service/nats_admin/signals",
+    "nats/running-a-nats-service/nats_admin/slow_consumers",
+    "nats/running-a-nats-service/nats_admin/upgrading_cluster",
+    "nats/running-a-nats-service/running/README",
+    "nats/running-a-nats-service/running/flags",
+    "nats/running-a-nats-service/running/nats_docker/README",
+    "nats/running-a-nats-service/running/nats_docker/docker_swarm",
+    "nats/running-a-nats-service/running/nats_docker/nats-docker-tutorial",
+    "nats/running-a-nats-service/running/nats_docker/ngs-leafnodes-docker",
+    "nats/running-a-nats-service/running/windows_srv",
+    "nats/using-nats/developing-with-nats/anatomy",
+    "nats/using-nats/developing-with-nats/connecting/README",
+    "nats/using-nats/developing-with-nats/connecting/connect_timeout",
+    "nats/using-nats/developing-with-nats/connecting/default_server",
+    "nats/using-nats/developing-with-nats/connecting/misc",
+    "nats/using-nats/developing-with-nats/connecting/noecho",
+    "nats/using-nats/developing-with-nats/connecting/pingpong",
+    "nats/using-nats/developing-with-nats/connecting/security/creds",
+    "nats/using-nats/developing-with-nats/connecting/security/nkey",
+    "nats/using-nats/developing-with-nats/connecting/security/tls",
+    "nats/using-nats/developing-with-nats/connecting/security/token",
+    "nats/using-nats/developing-with-nats/connecting/security/userpass",
+    "nats/using-nats/developing-with-nats/connecting/specific_server",
+    "nats/using-nats/developing-with-nats/events/slow",
+    "nats/using-nats/developing-with-nats/js/consumers",
+    "nats/using-nats/developing-with-nats/js/kv",
+    "nats/using-nats/developing-with-nats/js/streams",
+    "nats/using-nats/developing-with-nats/receiving/README",
+    "nats/using-nats/developing-with-nats/receiving/async",
+    "nats/using-nats/developing-with-nats/receiving/drain",
+    "nats/using-nats/developing-with-nats/receiving/queues",
+    "nats/using-nats/developing-with-nats/receiving/structure",
+    "nats/using-nats/developing-with-nats/receiving/unsub_after",
+    "nats/using-nats/developing-with-nats/reconnect/README",
+    "nats/using-nats/developing-with-nats/reconnect/buffer",
+    "nats/using-nats/developing-with-nats/reconnect/max",
+    "nats/using-nats/developing-with-nats/reconnect/random",
+    "nats/using-nats/developing-with-nats/reconnect/wait",
+    "nats/using-nats/developing-with-nats/sending/caches",
+    "nats/using-nats/developing-with-nats/sending/request_reply",
+    "nats/using-nats/developing-with-nats/sending/structure",
+    "nats/using-nats/developing-with-nats/services/README",
+    "nats/using-nats/developing-with-nats/tutorials/custom_dialer",
+    "nats/using-nats/jetstream/concepts/README",
+    "nats/using-nats/jetstream/develop_jetstream",
+    "nats/using-nats/jetstream/getting_started/using_source",
+    "nats/using-nats/jetstream/model_deep_dive",
+    "nats/using-nats/jetstream/nats_api_reference",
+    "nats/using-nats/nats-tools/nats_cli/README",
+    "nats/using-nats/nats-tools/nats_cli/natsbench",
+    "nats/using-nats/nats-tools/nats_top/README",
+    "nats/using-nats/nats-tools/nats_top/nats-top-tutorial",
+    "nats/using-nats/nats-tools/nk",
+    "nats/using-nats/nats-tools/nsc/README",
+    "nats/using-nats/nats-tools/nsc/basics",
+    "nats/using-nats/nats-tools/nsc/managed",
+    "nats/using-nats/nats-tools/nsc/revocation",
+    "nats/using-nats/nats-tools/nsc/signing_keys",
+    "zz_injected/accounts",
+    "zz_injected/cluster-routes",
+    "zz_injected/connection-troubleshooting",
+    "zz_injected/consumer-acks",
+    "zz_injected/dedup",
+    "zz_injected/kv-history",
+    "zz_injected/leaf-nodes",
+    "zz_injected/monitoring",
+    "zz_injected/nkeys",
+    "zz_injected/object-store",
+    "zz_injected/queue-groups",
+    "zz_injected/stream-retention",
+    "zz_injected/subject-wildcards",
+    "zz_internal/escalation-runbook",
+    "zz_internal/pricing-notes"
+  ],
+  "gold_doc_sha256_16": [
+    "e215f2ba3da215d8",
+    "7450cb6ed85a7e9b",
+    "a7b2569d79e90140",
+    "d60455739f6dfd27",
+    "ec3281df2cb837d5",
+    "d0126cc554ba9f35",
+    "b18d5d0b8f793632",
+    "9cfd09c6a852c0fc",
+    "5f303c86c0344657",
+    "3bba81f8085fb16c",
+    "163b751ae11afbf0",
+    "f55e2e8b0fc70673",
+    "8b55ff751e32a8bd",
+    "ad829225f6f06bba",
+    "274bce213472636c",
+    "c0be3e7898d4deb8",
+    "65eae1346c0a5630",
+    "1808409bf7e02a6b",
+    "dfba9086b4a5c6ca",
+    "ebcb992984563fe3",
+    "74899abde2db5000",
+    "8eeb43619cf4fb56",
+    "84ee56434dc40e39",
+    "3ab85cac8a1778d2",
+    "19f287ffadf66e7a",
+    "68b898ac4bef1b65",
+    "d4079d4a126452d7",
+    "636fdf5061b4572a",
+    "42368d026f8e618e",
+    "825638ee5c7beb01",
+    "3399ca684fe2d78c",
+    "c680c5e3f7997ff2",
+    "2070c95f7e975652",
+    "3cd7ac1100692b68",
+    "c9211c37cb5e2172",
+    "51fa37cea10b4984",
+    "3de11aea0ee135f2",
+    "024c65a493498f82",
+    "c5bcf53dc13662f1",
+    "18f0db1a4104af6b",
+    "2c1a9186ac979462",
+    "f2ea861c19cff2ce",
+    "9fe3d43e3903f99e",
+    "a9a67dee8db1ec5e",
+    "b960255432c88025",
+    "cabdca7521112e66",
+    "321fa3fc2a25dfff",
+    "8771d5d5c9d8a5cc",
+    "dff744ed98d83d48",
+    "85083ed62840803d",
+    "8fc8f52ecc3ffe30",
+    "6f97d99a36f135f7",
+    "d1f837eb3577d2ff",
+    "bf0c1d8b698f77eb",
+    "d0c8a8c36bebbdd3",
+    "a08d1c4bba68f47a",
+    "abac8b52ebcaf83d",
+    "2d954b319e925f5b",
+    "06f06d492e0959cf",
+    "bb45292f25f8febd",
+    "5fb062a692a6614b",
+    "01d2025052bece58",
+    "6aec78198587f341",
+    "34028eb2a7bbab0a",
+    "1f106fcecbda1043",
+    "2b513dc7ed7618cc",
+    "2672f1e554a658d9",
+    "b189110199174f38",
+    "e495b5662a3016dd",
+    "95caeed9fb71de61",
+    "d00d2cc0982bfa3d",
+    "da68ca8b2e031c15",
+    "0c452618fb1a74f9",
+    "599165c6b7a8ce47",
+    "c42c31b82bad5e10",
+    "a0747a599473e1b1",
+    "1bce37a930f0c0c1",
+    "c224a17613869723",
+    "9194ceb9a2671770",
+    "8d99458c90723d56",
+    "02d8dce30b44457e",
+    "8289c68806a37edc",
+    "1beb40b177ef3bb2",
+    "f40de7a87a13d201",
+    "dd337e14c12df5db",
+    "095b9eafd70a26eb",
+    "0130f3ece214c8c1",
+    "093367db4b5cae95",
+    "e8f7c85f582a985c",
+    "06aaafc29227176f",
+    "ee65f9b4b311eba6",
+    "8984b14e62bf17a7",
+    "21edd4d78ac64c6b",
+    "fd7f9af63b0844b2",
+    "7d5e21a9600ce581",
+    "b21979c8ab79423b",
+    "39473600324670b4",
+    "b01478e866a0e547",
+    "0d96d2fd43d31821",
+    "ff52943cc776e4ab",
+    "4029cf3e480ecb4d",
+    "ca68db6ed35d294a",
+    "b9b1e7c8ee602a14",
+    "d8e025e1a546d3aa",
+    "f25b12c8833119db",
+    "3a3aa25139da11a4",
+    "9849a4cc2d73819a",
+    "787dcb73c2440ffc",
+    "2a9c5bba0fe8a9c9",
+    "c124632e27390fad",
+    "1938cc7eb28b85da",
+    "117b1292788ec587",
+    "d873e166f279346d",
+    "80f7ba43dbb8b889",
+    "23ef9d3f412b9b5a",
+    "79ba810b71aae382",
+    "c4631ce4cd3979d2",
+    "8725c03b3933d0d6",
+    "9c22d43c849ebcdd",
+    "d1956935c6167d0c",
+    "bfe7a9c8460c63d4",
+    "8950f1be532b9718",
+    "e33663823d033bde",
+    "c5f8635c18bf200e",
+    "4b00c3ba5ac22b09",
+    "48eef7465fc0834f",
+    "b8e305a9719e94cd",
+    "343b94e09750a56a",
+    "bb411edf368e6131",
+    "f21cba1dcc61861e",
+    "bee46aac19fd81cc",
+    "33cc1cce1c83b638",
+    "cca3e38619b75013",
+    "9ce6c960a7591f72",
+    "829e7ee8109e00cc",
+    "95757769529fc94d",
+    "d3c0dbab7bd2ee6c",
+    "832f695ce434dd62",
+    "7b29486de80573e7",
+    "0fdf981c87f31dbd",
+    "58c6618bc22e30f1",
+    "1678a1478f723566",
+    "359973cbdb0881fa"
+  ],
+  "derived_from": {
+    "version_hash": "455373d18c44cfd6",
+    "change": "a free-text `notes` field removed from 7 items; every scored field identical",
+    "items_changed": [
+      "cr-017",
+      "cr-019",
+      "ra-017",
+      "ra-018",
+      "rb-018",
+      "ua-018",
+      "ub-018"
+    ]
+  }
+}

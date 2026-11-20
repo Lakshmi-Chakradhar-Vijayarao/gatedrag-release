@@ -1,0 +1,184 @@
+{
+  "golden": "data/golden/frozen/test.jsonl",
+  "n_items": 247,
+  "golden_provenance": {
+    "human-verified-draft": 247
+  },
+  "golden_version": "455373d18c44cfd6",
+  "pilot_only": false,
+  "blind_file_sha256": "49e3fd173dca12b02bfd82a67d052bf89f9fe71988cab68cf41fb892426fe1aa",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "torch": "2.11.0+cu130",
+  "k_baseline": 6,
+  "k_regression": 3,
+  "concurrency": 16,
+  "servers": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "args": []
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "args": [
+        "--quantization",
+        "awq"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2-7B-Instruct",
+      "args": []
+    }
+  ],
+  "pools": {
+    "baseline": {
+      "k": 6,
+      "minutes": 18.9,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "open_loop": {
+      "k": 2,
+      "minutes": 4.6,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "acl_off": {
+      "k": 3,
+      "minutes": 9.5,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "prompt_plain": {
+      "k": 3,
+      "minutes": 12.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "verifier_always_accept": {
+      "k": 3,
+      "minutes": 7.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "top_k_1": {
+      "k": 3,
+      "minutes": 3.6,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "max_tokens_32": {
+      "k": 3,
+      "minutes": 8.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "acl_post_filter": {
+      "k": 3,
+      "minutes": 9.5,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "top_k_2": {
+      "k": 3,
+      "minutes": 5.6,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "no_regenerate": {
+      "k": 3,
+      "minutes": 7.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "blind_release_1": {
+      "k": 3,
+      "minutes": 10.3,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "blind_release_2": {
+      "k": 3,
+      "minutes": 16.4,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "blind_release_3": {
+      "k": 3,
+      "minutes": 9.9,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "blind_release_4": {
+      "k": 3,
+      "minutes": 7.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "blind_release_5": {
+      "k": 3,
+      "minutes": 10.7,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "tp_release_1": {
+      "k": 3,
+      "minutes": 9.5,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "tp_release_2": {
+      "k": 3,
+      "minutes": 13.3,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "tp_release_3": {
+      "k": 3,
+      "minutes": 9.9,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "tp_release_4": {
+      "k": 3,
+      "minutes": 7.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "tp_release_5": {
+      "k": 3,
+      "minutes": 9.2,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_prompt_edit": {
+      "k": 3,
+      "minutes": 11.0,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_hybrid": {
+      "k": 3,
+      "minutes": 9.5,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct"
+    },
+    "real_awq": {
+      "k": 3,
+      "minutes": 9.8,
+      "generator": "openai-compatible:Qwen/Qwen2.5-7B-Instruct-AWQ"
+    },
+    "real_model_swap": {
+      "k": 3,
+      "minutes": 9.5,
+      "generator": "openai-compatible:Qwen/Qwen2-7B-Instruct"
+    }
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "changes_done": [
+    "acl_off",
+    "prompt_plain",
+    "verifier_always_accept",
+    "top_k_1",
+    "max_tokens_32",
+    "acl_post_filter",
+    "top_k_2",
+    "no_regenerate",
+    "blind_release_1",
+    "blind_release_2",
+    "blind_release_3",
+    "blind_release_4",
+    "blind_release_5",
+    "tp_release_1",
+    "tp_release_2",
+    "tp_release_3",
+    "tp_release_4",
+    "tp_release_5",
+    "real_prompt_edit",
+    "real_hybrid",
+    "real_awq",
+    "real_model_swap"
+  ],
+  "elapsed_h": 4.0,
+  "vllm": "vllm==0.6.6.post1"
+}

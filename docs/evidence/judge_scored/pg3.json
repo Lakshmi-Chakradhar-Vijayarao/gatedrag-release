@@ -1,0 +1,197 @@
+{
+ "n_sim": 2000,
+ "seed": 3,
+ "uncalibrated_null": {
+  "v3_full": 0.0095,
+  "v3_correct": 0.0095
+ },
+ "regressions": {
+  "tp_release_2": {
+   "rate_0.005": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.987,
+    "mcn_either": 0.9995,
+    "z_prev": 0.985
+   },
+   "rate_0.01": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.995,
+    "mcn_either": 0.9995,
+    "z_prev": 0.9935
+   },
+   "rate_0.02": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.999,
+    "mcn_either": 1.0,
+    "z_prev": 0.998
+   },
+   "discordant_mean": 43.6985,
+   "mean_drop": -0.09909919028340082,
+   "v3_full": 0.9995,
+   "v3_correct": 0.9995
+  },
+  "no_regenerate": {
+   "rate_0.005": {
+    "mean_prev": 0.9445,
+    "mcn_prev": 0.7955,
+    "mcn_either": 0.9035,
+    "z_prev": 0.7835
+   },
+   "rate_0.01": {
+    "mean_prev": 0.969,
+    "mcn_prev": 0.8565,
+    "mcn_either": 0.937,
+    "z_prev": 0.8545
+   },
+   "rate_0.02": {
+    "mean_prev": 0.982,
+    "mcn_prev": 0.942,
+    "mcn_either": 0.9685,
+    "z_prev": 0.9285
+   },
+   "discordant_mean": 31.5425,
+   "mean_drop": -0.0697834008097166,
+   "v3_full": 0.937,
+   "v3_correct": 0.937
+  },
+  "max_tokens_32": {
+   "rate_0.005": {
+    "mean_prev": 0.0005,
+    "mcn_prev": 0.0,
+    "mcn_either": 0.0,
+    "z_prev": 0.0
+   },
+   "rate_0.01": {
+    "mean_prev": 0.0005,
+    "mcn_prev": 0.0,
+    "mcn_either": 0.0,
+    "z_prev": 0.0
+   },
+   "rate_0.02": {
+    "mean_prev": 0.001,
+    "mcn_prev": 0.0,
+    "mcn_either": 0.0,
+    "z_prev": 0.0
+   },
+   "discordant_mean": 31.4665,
+   "mean_drop": 0.011435222672064777,
+   "v3_full": 0.0,
+   "v3_correct": 0.0
+  },
+  "top_k_2": {
+   "rate_0.005": {
+    "mean_prev": 0.125,
+    "mcn_prev": 0.003,
+    "mcn_either": 0.0055,
+    "z_prev": 0.003
+   },
+   "rate_0.01": {
+    "mean_prev": 0.1825,
+    "mcn_prev": 0.0105,
+    "mcn_either": 0.0095,
+    "z_prev": 0.0055
+   },
+   "rate_0.02": {
+    "mean_prev": 0.2765,
+    "mcn_prev": 0.0525,
+    "mcn_either": 0.0415,
+    "z_prev": 0.04
+   },
+   "discordant_mean": 40.758,
+   "mean_drop": -0.025611336032388663,
+   "v3_full": 0.0095,
+   "v3_correct": 0.0095
+  },
+  "real_prompt_edit": {
+   "rate_0.005": {
+    "mean_prev": 0.005,
+    "mcn_prev": 0.0,
+    "mcn_either": 0.0,
+    "z_prev": 0.0
+   },
+   "rate_0.01": {
+    "mean_prev": 0.0095,
+    "mcn_prev": 0.0,
+    "mcn_either": 0.0,
+    "z_prev": 0.0
+   },
+   "rate_0.02": {
+    "mean_prev": 0.019,
+    "mcn_prev": 0.0005,
+    "mcn_either": 0.0,
+    "z_prev": 0.0005
+   },
+   "discordant_mean": 36.8075,
+   "mean_drop": -0.007082995951417004,
+   "v3_full": 0.064,
+   "v3_correct": 0.0
+  },
+  "top_k_1": {
+   "rate_0.005": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.855,
+    "mcn_either": 0.9605,
+    "z_prev": 0.816
+   },
+   "rate_0.01": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.944,
+    "mcn_either": 0.983,
+    "z_prev": 0.923
+   },
+   "rate_0.02": {
+    "mean_prev": 1.0,
+    "mcn_prev": 0.9885,
+    "mcn_either": 0.999,
+    "z_prev": 0.982
+   },
+   "discordant_mean": 53.831,
+   "mean_drop": -0.08647368421052631,
+   "v3_full": 0.983,
+   "v3_correct": 0.983
+  }
+ },
+ "rate_0.005": {
+  "thresholds": {
+   "mean_prev": -0.044534412955465584,
+   "mcn_prev": 0.009599632024765015,
+   "mcn_either": 0.008440366983413699,
+   "z_prev": -2.5517487583458607
+  },
+  "realised_null": {
+   "mean_prev": 0.007,
+   "mcn_prev": 0.005,
+   "mcn_either": 0.005,
+   "z_prev": 0.005
+  }
+ },
+ "rate_0.01": {
+  "thresholds": {
+   "mean_prev": -0.04048582995951417,
+   "mcn_prev": 0.017325803041458133,
+   "mcn_either": 0.013301849365234375,
+   "z_prev": -2.3451978708766212
+  },
+  "realised_null": {
+   "mean_prev": 0.013,
+   "mcn_prev": 0.01,
+   "mcn_either": 0.011,
+   "z_prev": 0.01
+  }
+ },
+ "rate_0.02": {
+  "thresholds": {
+   "mean_prev": -0.03643724696356275,
+   "mcn_prev": 0.0384063720703125,
+   "mcn_either": 0.0245208740234375,
+   "z_prev": -2.0123078084749815
+  },
+  "realised_null": {
+   "mean_prev": 0.0205,
+   "mcn_prev": 0.0215,
+   "mcn_either": 0.0205,
+   "z_prev": 0.021
+  }
+ },
+ "discordant_null_mean": 17.8905
+}

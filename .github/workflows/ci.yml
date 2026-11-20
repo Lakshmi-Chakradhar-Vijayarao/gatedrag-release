@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src tests && mypy src --ignore-missing-imports
+      - name: Unit tests (offline, no model downloads)
+        run: pytest -q
+      - name: frozen split matches its manifest and derivation record
+        run: python scripts/verify_split.py
+      - name: Release-gate smoke test on the synthetic fixture
+        run: |
+          export PYTHONPATH=src
+          python -m gatedrag ingest tests/fixtures/corpus -o /tmp/chunks.jsonl
+          python -m gatedrag pool --chunks /tmp/chunks.jsonl --golden tests/fixtures/golden_synthetic.jsonl \
+            --generator fake --config configs/release.toml -k 2 -o /tmp/base.json
+          python -m gatedrag pool --chunks /tmp/chunks.jsonl --golden tests/fixtures/golden_synthetic.jsonl \
+            --generator fake --config configs/release.toml -k 2 --set acl_mode=off -o /tmp/leaky.json
+          # the gate must PASS an identical release and BLOCK a leaky one
+          python -m gatedrag gate --rule configs/gate_rule.toml --previous /tmp/base.json --anchor /tmp/base.json /tmp/base.json
+          ! python -m gatedrag gate --rule configs/gate_rule.toml --previous /tmp/base.json --anchor /tmp/base.json /tmp/leaky.json
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -f docker/Dockerfile.serve -t gatedrag . && docker run --rm gatedrag --help

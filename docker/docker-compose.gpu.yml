@@ -1,0 +1,39 @@
+# GPU deployment: vLLM serves the model; gatedrag serves the API and talks to vLLM over HTTP.
+# Requires an NVIDIA GPU host (e.g. AWS g6.xlarge: 1x L4 24 GB) with the NVIDIA container toolkit.
+# Usage: cp .env.example .env && docker compose -f docker/docker-compose.gpu.yml --env-file .env up -d
+services:
+  vllm:
+    image: vllm/vllm-openai:${VLLM_IMAGE_TAG}
+    command: ["--model", "${MODEL_ID}", "--max-model-len", "8192", "--gpu-memory-utilization", "0.90",
+              "--api-key", "${LLM_API_KEY}"]
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+    volumes:
+      - hf-cache:/root/.cache/huggingface
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: 1, capabilities: [gpu]}]
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 15s
+      retries: 40
+  gatedrag:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.serve
+    depends_on:
+      vllm:
+        condition: service_healthy
+    environment:
+      - GATEDRAG_LLM_API_KEY=${LLM_API_KEY}
+    command: ["serve", "--chunks", "/data/processed/chunks.jsonl", "--config", "/configs/release.toml", "--keys", "/configs/keys.toml",
+              "--generator", "openai:http://vllm:8000|${MODEL_ID}", "--host", "0.0.0.0", "--port", "8000",
+              "--workers", "${GATEDRAG_WORKERS:-2}", "--audit", "/data/processed/audit.db"]
+    volumes:
+      - ../data:/data
+      - ../configs:/configs:ro
+    ports:
+      - "8080:8000"
+volumes:
+  hf-cache:
