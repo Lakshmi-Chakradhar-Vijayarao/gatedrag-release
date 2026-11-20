@@ -1,17 +1,17 @@
-from dataclasses import dataclass, field
+"""The release gate: a candidate release is compared with the previous release and a frozen anchor."""
+
 import tomllib
+from dataclasses import dataclass, field
 
 import numpy as np
 
 from gatedrag.evaluation.metrics import METRICS
 from gatedrag.evaluation.stats import (
-    Interval,
-    bootstrap_ci,
     cluster_bootstrap_ci,
+    holm,
     mcnemar_exact,
     paired_bootstrap_ci,
     sign_flip_test,
-    holm,
 )
 
 
@@ -45,10 +45,10 @@ def load_rule(path):
         security_tested=tuple(
             data.get("security_tested", ("injection_followed",))
         ),
-        alpha=data["alpha"],
-        n_boot=data.get("n_boot", 2000),
-        n_perm=data.get("n_perm", 5000),
-        perf_tolerance=data.get("perf_tolerance", 0.10),
+        alpha=float(data["alpha"]),
+        n_boot=int(data.get("n_boot", 2000)),
+        n_perm=int(data.get("n_perm", 5000)),
+        perf_tolerance=float(data.get("perf_tolerance", 0.10)),
     )
 
 
@@ -164,7 +164,7 @@ def decide(base, cand, rule, seed=0, clusters=None):
 
     for metric, rejected in holm(primary_p, rule.alpha).items():
         if rejected:
-            reasons.append(f"{metric} significantly worse")
+            reasons.append(f"{metric} significantly worse (p={primary_p[metric]:.4f}, Holm)")
 
     for metric in rule.hard:
         a, b = _aligned(base, cand, metric)
@@ -232,12 +232,8 @@ def cluster_sign_flip_test(
         if c.shape != d.shape:
             raise ValueError("diff and clusters must have the same shape")
 
-        groups = {}
-        for value, label in zip(d, c):
-            groups.setdefault(label, 0.0)
-            groups[label] += float(value)
-
-        units = np.asarray(list(groups.values()), dtype=float)
+        # one unit per cluster, in sorted label order, so the result does not depend on item order
+        units = np.asarray([d[c == label].sum() for label in np.unique(c)], dtype=float)
     else:
         units = d.copy()
 
@@ -278,8 +274,8 @@ def _compare(
     security_p = {}
 
     for metric in metrics:
-        base_mean = item_means(base_runs[:k], metric)
-        cand_mean = item_means(cand_runs[:k], metric)
+        base_mean = item_means(base_runs, metric)
+        cand_mean = item_means(cand_runs, metric)
 
         mask = ~(np.isnan(base_mean) | np.isnan(cand_mean))
 
@@ -342,27 +338,27 @@ def _compare(
 
     for metric, rejected in holm(primary_p, alpha).items():
         if rejected:
-            reasons.append(f"{label}: {metric} significantly worse")
+            reasons.append(f"{label}: {metric} significantly worse (p={primary_p[metric]:.4f}, Holm at alpha={alpha})")
 
     if security:
         for metric, rejected in holm(security_p, alpha).items():
             if rejected:
                 reasons.append(
-                    f"{label}: {metric} significantly increased"
+                    f"{label}: {metric} significantly more failures (p={security_p[metric]:.4f})"
                 )
 
     for metric in rule.hard:
         base_failure_totals = []
         cand_failure_totals = []
 
-        for run in base_runs[:k]:
+        for run in base_runs:
             values = np.asarray(
                 [row[metric] for row in run],
                 dtype=float,
             )
             base_failure_totals.append(np.nansum(values))
 
-        for run in cand_runs[:k]:
+        for run in cand_runs:
             values = np.asarray(
                 [row[metric] for row in run],
                 dtype=float,
@@ -382,14 +378,11 @@ def _compare(
                 "baseline": base_failure_mean,
                 "candidate": cand_failure_mean,
                 "diff": cand_failure_mean - base_failure_mean,
-                "p_worse": 0.0
-                if cand_failure_mean > base_failure_mean
-                else 1.0,
             }
         )
 
         if cand_failure_mean > base_failure_mean:
-            reasons.append(f"{label}: {metric} increased")
+            reasons.append(f"{label}: {metric} {cand_failure_mean:g} failures/run vs {base_failure_mean:g} (hard rule)")
 
     return reasons, table
 
@@ -495,7 +488,7 @@ def decide_release(
             ("latency_ms", "p95"),
             ("tokens", "mean"),
         ):
-            if key not in perf:
+            if key not in perf["anchor"] or key not in perf["candidate"]:
                 continue
 
             result = perf_noninferior(
@@ -557,13 +550,15 @@ def decide_release(
                             )
                         )
                     ),
-                    "p_worse": float(result["upper95"]),
+                    "ratio": result["ratio"],
+                    "upper95": result["upper95"],
+                    "pass": result["pass"],
                 }
             )
 
             if not result["pass"]:
                 reasons.append(
-                    f"vs anchor: {key} failed non-inferiority"
+                    f"vs anchor: {key} {stat} ratio upper bound {result['upper95']:.3f} > {1 + rule.perf_tolerance:.2f}"
                 )
 
     return GateDecision(

@@ -1,6 +1,7 @@
+"""Statistics for release decisions: intervals, paired tests, multiple testing, power."""
+
 import math
 from dataclasses import dataclass
-from typing import Any
 
 import numpy as np
 
